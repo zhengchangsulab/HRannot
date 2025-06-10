@@ -103,7 +103,7 @@ chmod 711 HRannot.sh \
 
 ### Important Notes:
 • CDS.txt in Step 6 is the name of each reference CDSs isoforms. Examples are shown in examples/CDS.txt. \
-• Step 1, Step 2, Step 3 and Step 4 can be executed simultaneously if there are enough memory on your cluster. \
+• Step 1, Step 2, Step 3 and Step 4 can be executed simultaneously if there are enough memory on your cluster.
 
 ## 4 Outputs
 •	final.right.truegene.gff3: annotation for protein coding genes.\
