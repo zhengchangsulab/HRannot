@@ -98,7 +98,7 @@ HRannot.py -g genome.fa \\\
 	-nc non-coding-RNA.txt \\\
 	-l 300 \\\
 	-s 0.985 \
-chmod 711 HRannot.sh
+chmod 711 HRannot.sh \
 ./HRannot.sh
 
 ### Important Notes:
