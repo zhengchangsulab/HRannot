@@ -90,7 +90,7 @@ cd ..\
 splign -ldsdir fasta_dir -comps ./fasta_dir/rna.compartments -type est > splign.output.rna
 
 ### Step 6: Run the HRannot scripts. We used the following commands:
-HRannot.py -g genome.fa \\
+HRannot.py -g genome.fa /\\
 	-c CDS.txt \\
 	-sh splign.output.ref \\
 	-sr splign.output.rna \\
