@@ -3,7 +3,7 @@ HRannot is an accurate and user-friendly gene annotation pipeline for vertebrate
 
 ## 1 Installation
 
-git clone https://github.com/zhengchangsulab/HRannot \
+git clone https://github.com/zhengchangsulab/HRannot.git \
 cd HRannot/bin \
 PATH=$PATH:$PWD
 
