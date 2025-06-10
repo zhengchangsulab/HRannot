@@ -27,7 +27,7 @@ PATH=$PATH:$PWD
 •	Rfam database
 
 ## 3 Run the pipeline
-### Step 1: Use Splign to map the reference CDS isoforms to the target assembly. We used the following commands:
+### Step 1: Use Splign to map the reference CDS isoforms to the target assembly.
 reference_cds=reference_CDS.fa\
 genome=my_genome.fa\
 mkdir fasta_dir\
@@ -41,7 +41,7 @@ compart -qdb reference_CDS.fa -sdb my_genome.fa > cdna.compartments\
 cd ..\
 splign -ldsdir fasta_dir -comps ./fasta_dir/cdna.compartments > splign.output.ref
 
-### Step 2: Use Bowtie2 to map the high-quality sequencing reads to the target assembly allowing no-mismatch. We used the following commands:
+### Step 2: Use Bowtie2 to map the high-quality sequencing reads to the target assembly allowing no-mismatch.
 genome=my_genome.fa\
 r1=Illumina paired-end-1.fastq\
 r2=Illumina paired-end-2.fastq\
@@ -52,13 +52,13 @@ bedtools genomecov -ibam out.bam -bga > out.bed\
 awk '$4<10{print $0}' out.bed > notsupport.region \
 (Here we consider regions supported by less than 10 reads as not supported regions.)
 
-### Step 3: Use Infernal to predict non-coding RNAs against Rfam database. We used the following commands:
+### Step 3: Use Infernal to predict non-coding RNAs against Rfam database.
 Rfam_path=Path of Rfam database\
 Genome=my_genome.fa\
 esl-seqstat $Genome\
 cmscan --cpu 48 --tblout result.tbl $Rfam_path/Rfam.cm $Genome > result_final.cmscan
 
-### Step 4: Use Bowtie2 to map the RNA-seq reads to rRNA database to get the cleaned reads. Assemble the cleaned reads into transcripts using STAR and Trinity genome-guided method. We used the following commands:
+### Step 4: Use Bowtie2 to map the RNA-seq reads to rRNA database to get the cleaned reads. Assemble the cleaned reads into transcripts using STAR and Trinity genome-guided method.
 rrna=rrna_database.fa\
 left=RNA-seq paired-end-1.fastq\
 right=RNA-seq paired-end-2.fastq\
@@ -75,7 +75,7 @@ STAR --genomeDir ./star --runThreadN $threads --readFilesIn $left $right --outFi
 RNAbam=$PREFIX\Aligned.sortedByCoord.out.bam\
 Trinity --output Trinity_GG --genome_guided_bam $RNAbam --genome_guided_max_intron 200000 --CPU $threads --max_memory 350G --verbose
 
-### Step 5: Use Splign to map the transcripts obtained in step 4 to the target assembly. We used the following commands:
+### Step 5: Use Splign to map the transcripts obtained in step 4 to the target assembly.
 genome=my_genome.fa\
 rna=transcripts.fa\
 mkdir fasta_dir\
@@ -89,9 +89,9 @@ compart -qdb transcripts.fa -sdb my_genome.fa > rna.compartments\
 cd ..\
 splign -ldsdir fasta_dir -comps ./fasta_dir/rna.compartments -type est > splign.output.rna
 
-### Step 6: Run the HRannot scripts. We used the following commands:
-HRannot.py -g genome.fa \\\\
-	-c CDS.txt \\\\
+### Step 6: Run the HRannot scripts.
+HRannot.py -g genome.fa \\\
+	-c CDS.txt \\\
 	-sh splign.output.ref 
 	-sr splign.output.rna 
 	-ns notsupport.region 
