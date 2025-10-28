@@ -1,0 +1,2 @@
+Fulmarus_glacialis	0.9089768786127167
+Parus_major	0.8918111111111113

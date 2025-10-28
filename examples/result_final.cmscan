@@ -1,0 +1,1360 @@
+# cmscan :: search sequence(s) against a CM database
+# INFERNAL 1.1.2 (July 2016)
+# Copyright (C) 2016 Howard Hughes Medical Institute.
+# Freely distributed under a BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:                   genome.fa
+# target CM database:                    /projects/zcsu_research/chicken/SiwenResult/Cauritum/17-infernal/Rfam/Rfam.cm
+# tabular output of hits:                result.tbl
+# number of worker threads:              8 [--cpu]
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       NC_006108.5  [L=6844979]
+Hit scores:
+ rank     E-value  score  bias  modelname       start     end   mdl trunc   gc  description
+ ----   --------- ------ -----  ------------- ------- -------   --- ----- ----  -----------
+  (1) !   9.8e-20   98.5   0.0  mir-34        3272237 3272147 -  cm    no 0.44  mir-34 microRNA precursor family
+  (2) !   6.7e-15   77.1   0.0  uc_338        4197421 4197243 -  cm    no 0.54  TUC338
+  (3) !   6.1e-12   69.9   0.0  mir-8         2601151 2601075 -  cm    no 0.43  mir-8/mir-141/mir-200 microRNA precursor family
+  (4) !   2.6e-11   66.6   0.0  mir-3524      4437667 4437765 +  cm    no 0.39  mir-3524 microRNA precursor family
+  (5) !   6.5e-11   65.2   0.0  mir-3524      4437765 4437667 -  cm    no 0.39  mir-3524 microRNA precursor family
+  (6) !   4.5e-09   59.9   0.0  mir-8         2603478 2603405 -  cm    no 0.42  mir-8/mir-141/mir-200 microRNA precursor family
+  (7) !   2.1e-07   53.4   0.0  mir-3524      5060587 5060460 -  cm    no 0.45  mir-3524 microRNA precursor family
+  (8) !   5.4e-06   48.6   0.4  mir-3524      5422601 5422446 -  cm    no 0.35  mir-3524 microRNA precursor family
+  (9) !   9.8e-06   52.4   4.2  mir-466       4835136 4835042 -  cm    no 0.24  mir-466 microRNA precursor family
+ (10) !   3.7e-05   45.8   0.4  mir-3524      5422446 5422601 +  cm    no 0.35  mir-3524 microRNA precursor family
+ (11) !   8.6e-05   40.9   0.0  mir-449       3272239 3272145 -  cm    no 0.43  microRNA mir-449
+ (12) !   0.00022   43.2   0.0  mir-3524      5060460 5060587 +  cm    no 0.45  mir-3524 microRNA precursor family
+ (13) !   0.00055   44.2   3.3  mir-3688      4835136 4835048 -  cm    no 0.24  mir-3688 microRNA precursor family
+ (14) !    0.0058   42.1   2.5  mir-466       4835055 4835128 +  cm    no 0.22  mir-466 microRNA precursor family
+ (15) !    0.0082   42.5  16.6  mir-3149      4835027 4835111 +  cm    no 0.16  mir-3149 microRNA precursor family
+ ------ inclusion threshold ------
+ (16) ?     0.021   42.8   0.0  mir-4773      4437758 4437674 -  cm    no 0.39  mir-4773 microRNA precursor family
+ (17) ?     0.023   40.7   0.0  mir-3149      3451795 3451840 +  cm    no 0.24  mir-3149 microRNA precursor family
+ (18) ?     0.027   37.2   0.0  mir-34        3272148 3272238 +  cm    no 0.43  mir-34 microRNA precursor family
+ (19) ?     0.028   31.9   3.6  snR86          160497  160694 +  cm    no 0.36  Small nucleolar RNA snR86
+ (20) ?     0.032   40.2  13.6  mir-3149      4835109 4835029 -  cm    no 0.17  mir-3149 microRNA precursor family
+ (21) ?      0.07   38.0   0.0  mir-1756       419508  419419 -  cm    no 0.51  mir-1756 microRNA precursor family
+ (22) ?      0.16   38.7   1.2  mir-4536      4835143 4835056 -  cm    no 0.27  mir-4536 microRNA precursor family
+ (23) ?      0.17   37.5   6.3  mir-1277      4835056 4835117 +  cm    no 0.18  mir-1277 microRNA precursor family
+ (24) ?      0.17   33.5   0.0  mir-3524      5473773 5473854 +  cm    no 0.43  mir-3524 microRNA precursor family
+ (25) ?      0.17   35.0   1.0  mir-558       4835137 4835052 -  cm    no 0.26  microRNA mir-558
+ (26) ?      0.19   34.1   0.0  mir-1803      4814546 4814629 +  cm    no 0.51  mir-1803 microRNA precursor
+ (27) ?       0.2   36.2   3.0  MIR1122       4835154 4835040 -  cm    no 0.28  microRNA MIR1122
+ (28) ?       0.2   35.4   0.0  mir-1784      4814634 4814541 -  cm    no 0.52  mir-1784 microRNA precursor family
+ (29) ?      0.22   33.1   0.0  mir-3524      5473854 5473773 -  cm    no 0.43  mir-3524 microRNA precursor family
+ (30) ?      0.24   32.8   0.0  mir-8         2601075 2601151 +  cm    no 0.43  mir-8/mir-141/mir-200 microRNA precursor family
+ (31) ?      0.24   42.1   1.7  mir-574       4835053 4835130 +  cm    no 0.23  microRNA mir-574
+ (32) ?      0.26   38.3   0.0  mir-4773      4437674 4437758 +  cm    no 0.39  mir-4773 microRNA precursor family
+ (33) ?      0.28   35.7   0.1  mir-3154      2931851 2931959 +  cm    no 0.70  mir-3154 microRNA precursor family
+ (34) ?      0.29   29.4   0.0  uc_338        6661287 6661455 +  cm    no 0.62  TUC338
+ (35) ?      0.42   35.7   0.0  MIR774        5789667 5789558 -  cm    no 0.47  MIR774 microRNA precursor family
+ (36) ?       0.5   25.1   0.0  IsrM          2921953 2922211 +  cm    no 0.42  IsrM sRNA
+ (37) ?      0.65   36.3   0.0  mir-483       2775332 2775264 -  cm    no 0.61  mir-483 microRNA precursor family
+ (38) ?      0.65   36.3   0.0  mir-483       3533231 3533156 -  cm    no 0.71  mir-483 microRNA precursor family
+ (39) ?      0.69   31.1   0.0  mir-8         2603404 2603478 +  cm    no 0.43  mir-8/mir-141/mir-200 microRNA precursor family
+ (40) ?      0.69   32.4   0.0  mir-4436      2931853 2931952 +  cm    no 0.69  mir-4436 microRNA precursor family
+ (41) ?      0.73   33.4   0.0  mir-1784      3398187 3398283 +  cm    no 0.43  mir-1784 microRNA precursor family
+ (42) ?      0.74   34.9   0.0  mir-3149      3451838 3451795 -  cm    no 0.23  mir-3149 microRNA precursor family
+ (43) ?      0.74   31.0   0.0  mir-8         2598644 2598567 -  cm    no 0.42  mir-8/mir-141/mir-200 microRNA precursor family
+ (44) ?      0.82   33.7   0.1  mir-4433      2931852 2931954 +  cm    no 0.70  mir-4433 microRNA precursor family
+ (45) ?       0.9   32.6   0.0  mir-4875       827765  827700 -  cm    no 0.30  mir-4875 microRNA precursor family
+ (46) ?      0.94   33.4   0.3  mir-4433      6507412 6507489 +  cm    no 0.74  mir-4433 microRNA precursor family
+ (47) ?      0.98   30.9   0.0  mir-3524      5974217 5974107 -  cm    no 0.43  mir-3524 microRNA precursor family
+ (48) ?         1   27.5   0.0  uc_338        3711465 3711296 -  cm    no 0.46  TUC338
+ (49) ?       1.2   35.2   1.7  mir-4536      4835054 4835125 +  cm    no 0.22  mir-4536 microRNA precursor family
+ (50) ?       1.2   28.0   0.0  Fibro-purF    3755705 3755784 +  cm    no 0.56  Fibro-purF RNA
+ (51) ?       1.5   28.3   0.0  snR191        4704073 4704319 +  cm    no 0.42  Small nucleolar RNA snR191
+ (52) ?       1.6   37.0   0.0  mir-207       3533233 3533153 -  cm    no 0.70  microRNA mir-207
+ (53) ?       1.7   24.2   0.0  CrcZ          2153666 2153914 +  cm    no 0.47  Pseudomonas sRNA CrcZ
+ (54) ?       1.7   29.3   0.0  mir-6132      6500704 6500618 -  cm    no 0.66  mir-6132 microRNA precursor family
+ (55) ?       1.7   32.8   0.1  mir-466       3830899 3830960 +  cm    no 0.26  mir-466 microRNA precursor family
+ (56) ?       1.9   31.9   0.0  mir-1784      4814541 4814634 +  cm    no 0.52  mir-1784 microRNA precursor family
+ (57) ?       2.1   31.4   0.0  mir-671       2775268 2775330 +  cm    no 0.63  microRNA mir-671
+ (58) ?       2.1   22.3   0.4  lincRNA-p21_1 6251693 6251815 + hmm     - 0.51  LincRNA-p21 conserved region 1
+ (59) ?       2.3   37.7   1.7  mir-574       4835130 4835053 -  cm    no 0.23  microRNA mir-574
+ (60) ?       2.5   21.5   0.0  IRES_Bip      4846932 4846850 -  cm    no 0.60  bip internal ribosome entry site (IRES)
+ (61) ?       2.9   31.6   0.1  mir-4433      2931959 2931851 -  cm    no 0.70  mir-4433 microRNA precursor family
+ (62) ?       2.9   32.8   2.9  mir-1277      3451786 3451846 +  cm    no 0.20  mir-1277 microRNA precursor family
+ (63) ?       3.2   31.7   0.2  mir-3154      2931959 2931848 -  cm    no 0.70  mir-3154 microRNA precursor family
+ (64) ?       3.7   35.8   0.0  mir-H1        4417916 4418074 +  cm    no 0.63  mir-H1 microRNA precursor family
+ (65) ?       3.7   21.3   0.1  Vax2os1_1     3170068 3170170 + hmm     - 0.60  Vax2os1 conserved region 1
+ (66) ?         4   25.3   0.0  MIR408        2503980 2504079 +  cm    no 0.59  microRNA MIR408
+ (67) ?       4.1   32.0   0.3  mir-1224      2713593 2713525 -  cm    no 0.68  microRNA mir-1224
+ (68) ?       4.6   32.0   0.2  mir-1277      4835132 4835081 -  cm    no 0.25  mir-1277 microRNA precursor family
+ (69) ?       4.7   28.3   0.0  ceN54         2728179 2728131 -  cm    no 0.59  Caenorhabditis snoRNA ceN54
+ (70) ?         6   24.8   0.0  MIR408        1061664 1061527 -  cm    no 0.59  microRNA MIR408
+ (71) ?       6.1   33.1   3.3  RUF21         3554015 3554092 +  cm    no 0.22  RNA of unknown function 21
+ (72) ?       6.2   19.4   0.0  RNaseP_bact_a 3372963 3373004 +  cm    no 0.45  Bacterial RNase P class A
+ (73) ?       6.2   24.9   0.3  SCARNA7       3643582 3643425 -  cm    no 0.41  Small Cajal body-specific RNA 7
+ (74) ?       6.5   28.4   0.0  MIR1023       3441842 3441953 +  cm    no 0.47  microRNA MIR1023
+ (75) ?       6.7   27.3   0.0  SNORD35       5559791 5559865 +  cm    no 0.41  Small nucleolar RNA SNORD35
+ (76) ?       6.8   33.3   0.0  mir-3132      2775271 2775329 +  cm    no 0.63  mir-3132 microRNA precursor family
+ (77) ?       7.3   19.6   0.0  PART1_2       1538784 1538881 + hmm     - 0.50  Prostate androgen-regulated transcript 1 conserved region 2
+ (78) ?       7.4   24.5   0.0  MIR408        2504057 2504000 -  cm    no 0.59  microRNA MIR408
+ (79) ?       7.6   28.9   0.0  mir-558       4264035 4264079 +  cm    no 0.44  microRNA mir-558
+ (80) ?       7.7   20.1   0.0  MESTIT1_1     2439012 2439120 + hmm     - 0.43  MEST intronic transcript 1, antisense RNA conserved region 1
+ (81) ?       7.8   29.7   0.0  mir-3099      2751745 2751830 +  cm    no 0.55  mir-3099 microRNA precursor family
+ (82) ?       7.8   29.9   0.0  mir-4433      4456364 4456452 +  cm    no 0.56  mir-4433 microRNA precursor family
+ (83) ?       8.4   24.3   0.0  uc_338        4103271 4103326 +  cm    no 0.66  TUC338
+ (84) ?       8.6   19.8   0.0  IRES_Bip      5839055 5839187 +  cm    no 0.41  bip internal ribosome entry site (IRES)
+
+
+Hit alignments:
+>> mir-34  mir-34 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   9.8e-20   98.5   0.0  cm        1       90 []     3272237     3272147 - .. 0.99    no 0.44
+
+                                                                                                                 NC
+                      <<-<<<<-<<<<<-<<<<<<<<-<<<<<<<<<<<________________._____>>>>>>>>>>>->>>>>>>>->>>>>->>>>>>: CS
+       mir-34       1 GgGgguggUucucuGGCaGUgucgUuggUGaUUGUUgUGaguAaUAguaA.gGAAGCAAuCAccaAcuacACuGCCagagaAacacccCA 89     
+                      G:G:G::+UUCU:UGGCAGU:UC:U:G:UG:UUGUUGUGAG+AAUAGU+A GGAAGCAA:CA:C:A:UA:ACUGCC+:AGAA+::C::CA
+  NC_006108.5 3272237 GUGAGUGUUUCUUUGGCAGUGUCUUAGCUGGUUGUUGUGAGCAAUAGUUAaGGAAGCAAUCAGCAAGUAUACUGCCCUAGAAGUGCUACA 3272148
+                      ***********************************************9998*************************************** PP
+
+                        NC
+                      : CS
+       mir-34      90 c 90     
+                      C
+  NC_006108.5 3272147 C 3272147
+                      * PP
+
+>> uc_338  TUC338
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   6.7e-15   77.1   0.0  cm        1      180 []     4197421     4197243 - .. 0.95    no 0.54
+
+                                  v v    v         v   vv               v vvv                                    NC
+                      :(((--((--(((((((((((--(((((-((((((,,<<<-<-----<--<<<<<<-----<<<<<_________________>>>>>-- CS
+       uc_338       1 UuGAaaGcccuGGAGACUGAaGUCCcCuauuuauCCACaGAgCAGGUAcaGCacggGCAGcGgCaGUGCAgGCUUuuCCCACACuGcCCC 90     
+                      UUGA+A:CCC   A ACU  :G CC:C   UUA   A:AGAGCAG+UACA C   :GCA +GGCAG  CA+GCUU++ CCA  CUGCCC+
+  NC_006108.5 4197421 UUGACAGCCCUGAAUACUGAUGGCCUCU--UUAUCUACAGAGCAGAUACAACCCAGGCACUGGCAGCACAAGCUUCCACCAUGCUGCCCU 4197334
+                      *************************997..69999******************************************************* PP
+
+                           vvv v                   v     v       vv   v         v    v v                         NC
+                      ---->>>>>>->---.>->>>,,<<<<<<<_____>>>>>>>,)))))))))))---)))))))))))--))--.-)))::::::::::: CS
+       uc_338      91 acCaccguGCCUCAa.ccCuGaccuggaggGacCAccuccagaGgugagaGgGGuuguUCAGUCUCCauggCCu.uUCaAUCcUUgGCuu 178    
+                       CCA:   G CUC A CCCU: CC::GAG G CCA CUC::G+  UGA+ G:GG   :  AGU U    GG:C+ UUCA UC+UU  CU 
+  NC_006108.5 4197333 GCCAACAUGCCUCUAcCCCUAGCCUGGAGAGCCCACCUCUGGGUCUGAUGGAGGAG-AGUAGUUUCUGCGGUCCaUUCAGUCUUUCACUC 4197245
+                      *************995689***********************86777777888865.556***********9999*************** PP
+
+                         NC
+                      :: CS
+       uc_338     179 cU 180    
+                      CU
+  NC_006108.5 4197244 CU 4197243
+                      ** PP
+
+>> mir-8  mir-8/mir-141/mir-200 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   6.1e-12   69.9   0.0  cm        1       76 []     2601151     2601075 - .. 0.99    no 0.43
+
+                                                                                                    NC
+                      :::::<<-<<<<<<<<<---<<<<<<<<<<________________>>>>>>>>>>--->>>>->>>>>.>>::::: CS
+        mir-8       1 auCuGcgucCAUCUUACCgggCAGUgUUgGAUuguuuauuaagUcUCuAAcACUGcCUGGUAAuGAUGg.cgccGgu 76     
+                      +UCUG:: :CAUCUUAC +G:CAGUG:UGGAUU+ UU   +    UCUA:CACUG:CUGGUAA GAUG: ::  GG+
+  NC_006108.5 2601151 CUCUGUGGGCAUCUUACUAGACAGUGCUGGAUUUCUUGGAUCUAUUCUAACACUGUCUGGUAACGAUGUuUAAAGGG 2601075
+                      *************************************9999999********************************* PP
+
+>> mir-3524  mir-3524 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   2.6e-11   66.6   0.0  cm        1       84 []     4437667     4437765 + .. 0.95    no 0.39
+
+                          v                               v         v                               v     NC
+                      <<<-<<--<<-<<----<<<<<<<--<<<<<<-<<<<___~~~~~~>>>>->>>>>>-->>>>>>>---->>->>-->>->>> CS
+     mir-3524       1 GUCuCUuuCAaCCugaaCCAUUCUauGAUUCUgUGAUuau*[ 7]*AUCAgAGAAUCauAGAAUGGuugaGGuUGauAGaGAC 84     
+                      GU + UU+CAACC+ A+CCAUUCUAUGAUUCU UG  + +        CA AGAAUCAUAGAAUGG++ +GGUUGA+A + AC
+  NC_006108.5 4437667 GUUCCUUCCAACCCAAGCCAUUCUAUGAUUCUAUGGAAUC*[22]*AUCAUAGAAUCAUAGAAUGGCCUGGGUUGAAAAGGAC 4437765
+                      ***********************************75555...9..68*********************************** PP
+
+>> mir-3524  mir-3524 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !   6.5e-11   65.2   0.0  cm        1       84 []     4437765     4437667 - .. 0.95    no 0.39
+
+                        v                                                                      v   NC
+                      <<<-<<--<<-<<----<<<<<<<--<<<<<<-<<~~~~~~>>->>>>>>-->>>>>>>---->>->>-->>->>> CS
+     mir-3524       1 GUCuCUuuCAaCCugaaCCAUUCUauGAUUCUgUG*[14]*CAgAGAAUCauAGAAUGGuugaGGuUGauAGaGAC 84     
+                      GU + UUUCAACC+ ++CCAUUCUAUGAUUCU UG      CA AGAAUCAUAGAAUGG+U +GGUUG++A + AC
+  NC_006108.5 4437765 GUCCUUUUCAACCCAGGCCAUUCUAUGAUUCUAUG*[29]*CAUAGAAUCAUAGAAUGGCUUGGGUUGGAAGGAAC 4437667
+                      **********************************9...8..9********************************** PP
+
+>> mir-8  mir-8/mir-141/mir-200 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) !   4.5e-09   59.9   0.0  cm        1       76 []     2603478     2603405 - .. 0.98    no 0.42
+
+                           v  v                                                           v v      NC
+                      :::::<<-<<<<<<<<<---<<<<<<<<<<________________>>>>>>>>>>--->>>>->>>>>>>::::: CS
+        mir-8       1 auCuGcgucCAUCUUACCgggCAGUgUUgGAUuguuuauuaagUcUCuAAcACUGcCUGGUAAuGAUGgcgccGgu 76     
+                        C   :  CAUCUUAC GGGCAG::UUGGAU++U U U  + U UCUAA::CUGCCUGGUAAUGAUG :   GGU
+  NC_006108.5 2603478 GCCAUUA-CCAUCUUACUGGGCAGCAUUGGAUGUUCUCU-GUUUUUCUAAUACUGCCUGGUAAUGAUGAUUGUGGU 2603405
+                      *******.**************************98886.9999******************************** PP
+
+>> mir-3524  mir-3524 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) !   2.1e-07   53.4   0.0  cm        1       84 []     5060587     5060460 - .. 0.98    no 0.45
+
+                                                v                           v                           NC
+                      <<<-<<--<<-<<----<<<<<<<--<<<<<<-<<<<_~~~~~~>>>>->>>>>>-->>>>>>>---->>->>-->>->>> CS
+     mir-3524       1 GUCuCUuuCAaCCugaaCCAUUCUauGAUUCUgUGAUu*[ 9]*AUCAgAGAAUCauAGAAUGGuugaGGuUGauAGaGAC 84     
+                      GU +CUU+ AAC + A+ CAUUCUAU AUUCU UG U       A CA+AGAAU A+AGAAUG UU + GUU ++AG+ AC
+  NC_006108.5 5060587 GUUCCUUCUAACUCAAGUCAUUCUAUGAUUCUAUGGUG*[53]*AUCACAGAAUGACAGAAUGGUUUGGGUUGGAAGGGAC 5060460
+                      ************************************96...9..9************************************ PP
+
+>> mir-3524  mir-3524 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) !   5.4e-06   48.6   0.4  cm        1       84 []     5422601     5422446 - .. 0.97    no 0.35
+
+                                       v                  v             v                       v                NC
+                      <<<-<<--<<-<<----<<<<<<<--<<<<<<-<<<<_______~~~~~~>>>>->>>>>>--.....>>>>>>>---->>->>-->>-> CS
+     mir-3524       1 GUCuCUuuCAaCCugaaCCAUUCUauGAUUCUgUGAUuauuuuu*[ 3]*AUCAgAGAAUCau.....AGAAUGGuugaGGuUGauAGaG 82     
+                      GUC+:UU+CAACC+ ++ CA UCU+UGAUUCU UGA +AU+UUU       UCA AGAAUCAU     AGA UG ++ +GGUUGA+A:+G
+  NC_006108.5 5422601 GUCCUUUCCAACCCAGGACAUUCUGUGAUUCUAUGAAAAUAUUU*[70]*AUCAAAGAAUCAUaucacAGAGUGGCCUGGGUUGAAAAGG 5422448
+                      ************************************99988876...*..9**********9888888********************** PP
+
+                         NC
+                      >> CS
+     mir-3524      83 AC 84     
+                      AC
+  NC_006108.5 5422447 AC 5422446
+                      ** PP
+
+>> mir-466  mir-466 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (9) !   9.8e-06   52.4   4.2  cm        1       80 []     4835136     4835042 - .. 0.98    no 0.24
+
+                                                     v                  v                               NC
+                      :<<<<<<<<<-<<<<<<<<<<--<<<<<--<<<<<<____~~~~~~>>>>>>>>>>>-->>>>>>>>>>-->>>>>>>>>: CS
+      mir-466       1 UguauGuGuugauGuGuGuGuACauGuaCAuguGugAAUA*[ 5]*uaCacauaCauACaCgCaCaCauAAgaCaCauacG 80     
+                      U:U:  U U  :UGUGUG:GUA AU:UA AU U:UG AUA      UA:A AUA:AUA AC:CACACA:AA A A  :A:G
+  NC_006108.5 4835136 UGUGUGUGUGUGUGUGUGUGUAUAUAUAUAUAUAUGUAUA*[20]*UAUACAUAUAUAUACACACACACAAUAUAUGUAUG 4835042
+                      ************************************9997...9..999999***************************** PP
+
+>> mir-3524  mir-3524 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (10) !   3.7e-05   45.8   0.4  cm        1       84 []     5422446     5422601 + .. 0.95    no 0.35
+
+                                       v  v                    v            v               v  v                 NC
+                      <<<-<<--<<-<<----<<<<<<<-.....-<<<<<<-<<<<______~~~~~~>>>>->>>>>>-->>>>>>>---->>->>-->>->> CS
+     mir-3524       1 GUCuCUuuCAaCCugaaCCAUUCUa.....uGAUUCUgUGAUuauuuu*[ 4]*AUCAgAGAAUCauAGAAUGGuugaGGuUGauAGaGA 83     
+                      GUC+:UUUCAACC+ ++ CA UCU+     UGAUUCU UGA U U U+       UCA AGAAUCA+AGA UG ++ +GGUUG++A:+GA
+  NC_006108.5 5422446 GUCCUUUUCAACCCAGGCCACUCUGugauaUGAUUCUUUGAUUUUCUA*[71]*UUCAUAGAAUCACAGAAUGUCCUGGGUUGGAAAGGA 5422600
+                      ************************6444449**********8877665...*..8*********************************** PP
+
+                        NC
+                      > CS
+     mir-3524      84 C 84     
+                      C
+  NC_006108.5 5422601 C 5422601
+                      * PP
+
+>> mir-449  microRNA mir-449
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (11) !   8.6e-05   40.9   0.0  cm        1       90 []     3272239     3272145 - .. 0.92    no 0.43
+
+                         vv                   v                                               v                  NC
+                      :::<<<<<<<<<<<--<<<<<<<<<<-------<<<<<<<.______________.....>>>>>>>--..>>>>>>>>>>-->>>>>>> CS
+      mir-449       1 uUGcgugcgacgggUuGGCAGuGuauUGUUAGCugGcUGu.gUauuuuaauuucA.....aCAgCcacu..auaCaCUGCCaucccgucg 82     
+                       UG  :G:: ::::UUGGCAGU U :  UUAGCUG::UG: GU    +A+++U+A     :CA::CA +  :UA ACUGCC U:::: ::
+  NC_006108.5 3272239 CUGUGAGUGUUUCUUUGGCAGUGU-C--UUAGCUGGUUGUuGUGAGCAAUAGUUAaggaaGCAAUCAGCaaGUAUACUGCCCUAGAAGUG 3272153
+                      ************************.5..8***********97777777777766678888*********8779***************** PP
+
+                        vv     NC
+                      >>>>:::: CS
+      mir-449      83 cacgaaaA 90     
+                      C:  A A 
+  NC_006108.5 3272152 CUACACAU 3272145
+                      ******** PP
+
+>> mir-3524  mir-3524 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (12) !   0.00022   43.2   0.0  cm        1       84 []     5060460     5060587 + .. 0.98    no 0.45
+
+                        v     v   v    v        v        v            v        v        v    v   v     v   NC
+                      <<<-<<--<<-<<----<<<<<<<--<<<<<<-<<<<____~~~~~~>>>>->>>>>>-->>>>>>>---->>->>-->>->>> CS
+     mir-3524       1 GUCuCUuuCAaCCugaaCCAUUCUauGAUUCUgUGAUuauu*[ 6]*AUCAgAGAAUCauAGAAUGGuugaGGuUGauAGaGAC 84     
+                      GU +CUU+ AAC + AA CAUUCU+U AUUCUGUG U +U+      A CA AGAAU AUAGAAUG +U + GUU ++AG+ AC
+  NC_006108.5 5060460 GUCCCUUCCAACCCAAACCAUUCUGUCAUUCUGUGAUGCUA*[50]*ACCAUAGAAUCAUAGAAUGACUUGAGUUAGAAGGAAC 5060587
+                      ***********************************998776...*..99*********************************** PP
+
+>> mir-3688  mir-3688 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (13) !   0.00055   44.2   3.3  cm        1       88 []     4835136     4835048 - .. 0.99    no 0.24
+
+                                               v                                      v                         NC
+                      <<<<<.<<-<<<<<<<<<<<<<<<<<<<<<<<<<<____________________>>>>>>>>>>>>>>>>>>>>>>>>>>->>>>>>> CS
+     mir-3688       1 uCaCu.uuaaaGaGuGGCaaaGuCuuuCCauauGuaUauAuauAuaUauaUAuAuaCauauGGaaaGaCuuuGCCaCuCuuuaaaGuGa 88     
+                      U : U U: ::G:GUG: ::::U:U U::AUAU:U+UAUA+AUA+AUAU+UAUA+A:AUAU::A A:A:::: :CAC:C:: :AA : A
+  NC_006108.5 4835136 UGUGUgUGUGUGUGUGUGUGUAUAUAUAUAUAUAUGUAUACAUACAUAUGUAUACAUAUAUAUACAUAUAUAUACACACACACAAUAUA 4835048
+                      *****9*********************************************************************************** PP
+
+>> mir-466  mir-466 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (14) !    0.0058   42.1   2.5  cm        1       80 []     4835055     4835128 + .. 0.77    no 0.22
+
+                             v     v                                                    v      v        NC
+                      :<<<<<<<<<-<<<<<<<<<<--<<<<<--<<<<<<______.___>>>>>>>>>>>-->>>>>>>>>>-->>>>>>>>>: CS
+      mir-466       1 UguauGuGuugauGuGuGuGuACauGuaCAuguGugAAUAUG.AUAuaCacauaCauACaCgCaCaCauAAgaCaCauacG 80     
+                      UGU:UGU    :U U:U:::U  AU:UA AUGU:U: AUAUG AU :A:ACAUA:AUA A:::A:A A:A   CACA:AC 
+  NC_006108.5 4835055 UGUGUGU----GUAUAUAUAUGUAUAUAUAUGUAUACAUAUGuAUGUAUACAUAUAUAUAUAUAUACACA---CACACACA 4835128
+                      *******....66677777777788888888888888888875667888888888888888777777765...5******* PP
+
+>> mir-3149  mir-3149 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (15) !    0.0082   42.5  16.6  cm        1       83 []     4835027     4835111 + .. 0.87    no 0.16
+
+                                              v                                   v                         NC
+                      <<<<<<<<<<<<<<<<<<<<<<<<<----<<<..-<<<<<________>>>>>->>>--->>>>>>>>>>>>>>>>>>>>>>>>> CS
+     mir-3149       1 auaCauaCauguaCaCaCaCauguCAUCCaCa..CaCauaCAUAUAUAuauGuUuGuAUGGauauGuGuGuGuauguGuguGuau 83     
+                      AUA:A:A:A::UA:ACA:ACAU:U  U  : :   ::AUA AUAU UAUAU:: : :AU  A:AUGU:UGU:UA::U:U:U:UAU
+  NC_006108.5 4835027 AUAUAUAUAUGUAUACAUACAUAUAUUGUGUGugUGUAUAUAUAUGUAUAUAUAUGUAUACAUAUGUAUGUAUACAUAUAUAUAU 4835111
+                      ************************98876665115666666667777899999999999*9************************ PP
+
+>> mir-4773  mir-4773 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (16) ?     0.021   42.8   0.0  cm        1       78 []     4437758     4437674 - .. 0.96    no 0.39
+
+                                                                                     NC
+                      <<<<<<<<<<<<<<<<<<<<<<<<<<<<~~~~~~>>>>>>>>>>>>>>>>>>>>>>>>>>>> CS
+     mir-4773       1 uGCuCCCCaGCCuuuCuauGCuCCuGuu*[22]*aaCaGGaGCauaGaaaGGCuGGGGaGCa 78     
+                       :::CCC::GCC:UUCUAUG:U:CU:U:      :A:AG:A:CAUAGAA:GGC::GGG::: 
+  NC_006108.5 4437758 UCAACCCAGGCCAUUCUAUGAUUCUAUG*[29]*CAUAGAAUCAUAGAAUGGCUUGGGUUGG 4437674
+                      **************************97...9..79************************** PP
+
+>> mir-3149  mir-3149 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (17) ?     0.023   40.7   0.0  cm        1       83 []     3451795     3451840 + .. 0.97    no 0.24
+
+                                                                           NC
+                      <<<<<<<<<<<<<<<<<<<<<<<~~~~~~>>>>>>>>>>>>>>>>>>>>>>> CS
+     mir-3149       1 auaCauaCauguaCaCaCaCaug*[37]*uauGuGuGuGuauguGuguGuau 83     
+                      A A:AUA:A::UACACACACA :      : UGUGUGUGUA::U:UGU:U U
+  NC_006108.5 3451795 AUAUAUAUAUAUACACACACAUA*[ 0]*UGUGUGUGUGUAUAUAUGUAUGU 3451840
+                      *********************86......68********************* PP
+
+>> mir-34  mir-34 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (18) ?     0.027   37.2   0.0  cm        1       90 []     3272148     3272238 + .. 0.91    no 0.43
+
+                           vv     v       v  v v    v                          v    v v  v       v     vv       NC
+                      <<-<<<<-<<<<<-<<<<<<<<-<<<<<<<<<<<_______________~~~~~>>>>>>>>>>>->>>>>>>>->>>>>->>>>>>:: CS
+       mir-34       1 GgGgguggUucucuGGCaGUgucgUuggUGaUUGUUgUGaguAaUAgua*[6]*CAAuCAccaAcuacACuGCCagagaAacacccCAc 90     
+                       G :G   UUCU  GGCAGU U+ U G:UG UUG U      A UA U      CAA CA:C A  A ACUGCCA AGAAA  C:C   
+  NC_006108.5 3272148 UGUAGCACUUCUAGGGCAGUAUACUUGCUGAUUGCUUCCUUAACUAUUG*[7]*CAACCAGCUAAGACACUGCCAAAGAAACACUCACA 3272238
+                      **********************************999776666666554..5..*********************************** PP
+
+>> snR86  Small nucleolar RNA snR86
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (19) ?     0.028   31.9   3.6  cm       89      848 ..      160497      160694 + .. 0.81    no 0.36
+
+                       v          v    vv                    v                                                v   NC
+                     [[[[---------[[[[[[[---------[[[[[[[[[[[[[[---[[[[[-----[[[[[[[[---[[[[[[[[[[-------[[[[[[[- CS
+        snR86     89 uccgCUAUAuUUuuuucuCaAAuUGUCAUucuuuuuucccuucUUuuuucuucaAuccccCuucUauucgaagaaacUUGAuuacauuGcaU 180   
+                     :: :CU U UUUU UU:U           U:UUUUUU::: :: UU:U::UU  AU::::: U:  U:C::: ::A: UG UU : :U  :U
+  NC_006108.5 160497 GAAGCUUUUUUUUUUUUU-----------UUUUUUUUUUUGCUCUUCUUUUUGCAUUUUUUUUUCCUGCCCGUACAUGUGUUUCUGUUUUGU 160577
+                     ****99884444433333...........55555555555555555777777666677777777788**********************999 PP
+
+                                 v                                                    v            vv    v        NC
+                     ---~~~~~~~-]]]]]]]------]]]]]]]]]]----------]]]]]]]]---]]]]]---]]]]]]]]]]]]]]-]]]]]]]------] CS
+        snR86    181 AUc*[580]*UugCaaugcaUGAuguuucuucgauuAgagaAGuggaGggggaauggaaaUAcgaagggaaaaaagaAuGagaaaUcAAAAu 845   
+                     AU+       U:  A: :CAU   :U:: :::G:U     AAG :G :::::AA+G::A: A :: :::AAAAAA:AA++A:AA  CA AA:
+  NC_006108.5 160578 AUU*[ 32]*UUUAAGUACAUCUGGUGGGUGGGCUCU---AAGGGGGAGGAAAAGGAGAGAAGGGGAGAAAAAAAAAAAAAGAAUACACAAC 160691
+                     987....9..6999********************865...5566777777777889999999999999999999999877888888888*** PP
+
+                     v   NC
+                     ]]] CS
+        snR86    846 gga 848   
+                      ::
+  NC_006108.5 160692 CUC 160694
+                     *** PP
+
+>> mir-3149  mir-3149 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (20) ?     0.032   40.2  13.6  cm        1       83 []     4835109     4835029 - .. 0.92    no 0.17
+
+                                                   v v v v            v v v v                             NC
+                      <<<<<<<<<<<<<<<<<<<<<<<<<----<<<-<<<<<________>>>>>->>>--->>>>>>>>>>>>>>>>>>>>>>>>> CS
+     mir-3149       1 auaCauaCauguaCaCaCaCauguCAUCCaCaCaCauaCAUAUAUAuauGuUuGuAUGGauauGuGuGuGuauguGuguGuau 83     
+                      AUA:A:A::::UACA:ACA:AUGU AU C :   : UACAUAUAUAUA :   : A   AUAU:UGU:UGUA::::U:U:UAU
+  NC_006108.5 4835109 AUAUAUAUGUAUACAUACAUAUGU-AUACAUAUAUAUACAUAUAUAUACACACACACA-AUAUAUGUAUGUAUACAUAUAUAU 4835029
+                      ***********************9.899988888888888888888888888888877.9*********************** PP
+
+>> mir-1756  mir-1756 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (21) ?      0.07   38.0   0.0  cm        1       90 []      419508      419419 - .. 1.00    no 0.51
+
+                     v        v   v vv                                                        vv v   v        v NC
+                     <<<<<<<<<<<<-<<<<<<<<<<<<<<<<------------<<____>>------------>>>>>>>>>>>>>>>>->>>>>>>>>>>> CS
+     mir-1756      1 ugggCCagaguCuCaGCugGuGuaaauCaGuAGaGauCuAaugAaaUcauUaGuGCUuCaguGauuuaCaCcaGCuGuGacucuGGccca 90    
+                      G G CAGA :CU A   :GUG AAAU:: +A A +UCU +UGA+ UCA+U+G+GCU   G::AUUU CAC:   U +G: UCUG C C 
+  NC_006108.5 419508 AGUGGCAGAGCCUAAGUGGGUGUAAAUUGUCACAUCUCUGCUGACUUCAGUGGAGCUGUGGCAAUUUGCACUUCGUGAGGAUCUGUCGCC 419419
+                     ****************************************************************************************** PP
+
+>> mir-4536  mir-4536 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (22) ?      0.16   38.7   1.2  cm        1       88 []     4835143     4835056 - .. 0.79    no 0.27
+
+                                                            vv                 vv                                NC
+                      <<<<<.<<<<<<<<<<<<<<<<<<<<-<<<<-------<<<-<<<______>>>-->>>>>>>->>>>>>>>>>>>>>>>>>>>.>>>>> CS
+     mir-4536       1 auGuG.GuaGauauauGCaCGauauagguacguaugUaugcaugcAuAaAagcagggcaguacauauauCGuGCauauauCuaC.CaCau 88     
+                      :UGUG GU   U U UG:    U U +GUA: UAU UA  :AUG:AUA A :CA +:  :UACA A A    :CA A A   AC CACA:
+  NC_006108.5 4835143 GUGUGuGUGUGUGUGUGUG-UGUGUGUGUAUAUAUAUAUAUAUGUAUACAUACAUAUGUAUACAUAUAUA-UACAUAUAUAUACaCACAC 4835056
+                      ****944555555555555.5799999***********99****************99999999999875.556666655555549**** PP
+
+>> mir-1277  mir-1277 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (23) ?      0.17   37.5   6.3  cm        8       69 ..     4835056     4835117 + .. 1.00    no 0.18
+
+                                                                                     NC
+                      <<<-<<<<<<<<<<<<-<<<<<<<<<<<______>>>>>>>>>>>->>>>>>>>>>>>->>> CS
+     mir-1277       8 aaaUauauauauauauGuaCGuauguguAUAUaAauguauaCGuaGauauauauguauUuuu 69     
+                      :: U U :AUAUAUAUGUA:: AU:UGUAUA A AUG:AU ::UA AUAUAUAU: A   ::
+  NC_006108.5 4835056 GUGUGUGUAUAUAUAUGUAUAUAUAUGUAUACAUAUGUAUGUAUACAUAUAUAUAUAUAUAC 4835117
+                      ************************************************************** PP
+
+>> mir-3524  mir-3524 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (24) ?      0.17   33.5   0.0  cm        1       84 []     5473773     5473854 + .. 0.90    no 0.43
+
+                          v            v  vv      v       v           v       v      vv  v            v     NC
+                      <<<-<<--<<-<<----<<<<<<<--<<<<<<-<<<<_____~~~~~~>>>>->>>>>>-->>>>>>>---->>->>-->>->>> CS
+     mir-3524       1 GUCuCUuuCAaCCugaaCCAUUCUauGAUUCUgUGAUuauuu*[ 5]*AUCAgAGAAUCauAGAAUGGuugaGGuUGauAGaGAC 84     
+                      GUC+ UU+CAACC     CA  CUAUG  UCU UGA +AU+U       UCA+AGA  CA+AG AUGG+U  GGUUGA+A +GAC
+  NC_006108.5 5473773 GUCCCUUCCAACC-----CA-ACUAUGGCUCUAUGAGAAUAU*[10]*AUCACAGAAUCACAGAAUGGCUU-GGUUGAAAAGGAC 5473854
+                      **********995.....44.28888**********888776...8..8*****************99999.599********** PP
+
+>> mir-558  microRNA mir-558
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (25) ?      0.17   35.0   1.0  cm        1       94 []     4835137     4835052 - .. 0.68    no 0.26
+
+                                                v               vv      vv               v                     NC
+                      ::::::::<<-<<<-<<<<<<-<<<<<<<<<<<<<<<<<<--<<~~~~~~>>-->>>>>>>>>>>>>>>>>>.>>>>>>->>>->>:: CS
+      mir-558       1 gUGUGUGUGcGcguguGuGguUauuuuGGuacaGcaGCuCUAGa*[13]*uCCUGaGCugCuguaCCaaaau.acCaCaAacgGgCUG 94     
+                      GUGUGUGUG:G:GUGUGU : UAU:U ::UA:A:::G:::  +          U:::C:::U:UA:: A:AU  : ACA AC: :C  
+  NC_006108.5 4835137 GUGUGUGUGUGUGUGUGUGUGUAUAUAUAUAUAUAUGUAUACAU*[ 5]*U-GUAUACAUAUAUAUACAUAUaUAUACACACACACAA 4835052
+                      *******************9866666666666655555543322...4..2.334555555555555555555799************ PP
+
+>> mir-1803  mir-1803 microRNA precursor
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (26) ?      0.19   34.1   0.0  cm        1       85 []     4814546     4814629 + .. 0.96    no 0.51
+
+                                           v    vv      v   v      v   v      vv    v                       NC
+                      <<----<<<<-<<<<<<<<<-<<<--<<-<<<<<<<<<<<<__>>>>>>>>>>>>->>-->>>->>>>>>>>>->>>>----->> CS
+     mir-1803       1 gcAuUUGGgcaUGAuCCaaAGCcCAuugAaGuCAaUGgaagUCuuucCAuUGaCuUcaauGgGCUuuGGaUCAggcCCuuuuagc 85     
+                      :CA U :G::  :AUCC: :  :C +  AAGUCA UGG A:  :U CCA UGACUU  AUG:  : :GGAU:  ::C: ++ AG:
+  NC_006108.5 4814546 ACAGU-GGGUGAAAUCCCUGCUUCGCUGAAGUCAAUGGCAGAACUCCCACUGACUUGCAUGGUGCAGGGAUUUCAUCUCCACAGU 4814629
+                      **998.**************9*********************9************9777888889******************** PP
+
+>> MIR1122  microRNA MIR1122
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (27) ?       0.2   36.2   3.0  cm        1      135 []     4835154     4835040 - .. 0.52    no 0.28
+
+                               vvv                    v                          v               v               NC
+                      ::::<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-----------------<<<<<<<<<<<<___________>>>>>>>>>>>>----- CS
+      MIR1122       1 uaaaUACUCCCUCCGUCCggaAaugcuUGUcuuaaAuuUGuauAaAuauGgAuGuaUcuAgacaUauuuUAGUucUagAuaCaUcCauaU 90     
+                       A +UAC :   ::GU::G:: :U : U:U U          U   U UG:AU::AU:U :A+AU U +UA  U: A:AU::AU:CAUAU
+  NC_006108.5 4835154 CAGGUACAC---UUGUGUGUGUGUGUGUGUGUG---------UGUGUGUGUAUAUAUAUAUAUAUGU-AUACAUACAUAUGUAUACAUAU 4835078
+                      ********9...556666666555555555444.........2222222222222222222222221.1233344444444444444444 PP
+
+                                  v                    vvv          NC
+                      ------------>>>>>>>>>>>>>>>>>>>>>>>>>>>>>:::: CS
+      MIR1122      91 UUAuaCAaaUuuaagACAagcauUuccGGACGGAGGGAGUAuauu 135    
+                       UAUAC       A A:A : A: ::C::AC::+++: GUAU U 
+  NC_006108.5 4835077 AUAUAC-------AUAUAUAUACACACACACAAUAUAUGUAUGUA 4835040
+                      444444.......55555566666666667778889********* PP
+
+>> mir-1784  mir-1784 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (28) ?       0.2   35.4   0.0  cm        1       92 []     4814634     4814541 - .. 0.98    no 0.52
+
+                             v                   vv v v                              v v vv                 v    NC
+                      ::::<<<<<<<<..-<<<<<<<<<<<<<<<<<<----<<<<<<__________>>>>>>---->>>>>>>>>>>>>>>>>>->>>>>>>> CS
+     mir-1784       1 uaAUcuCuugGG..GCCCaauuCuGCuCccauuGAAAuCaguGAGAGUuCUGCCacuGaCUUAaauggGaGCaGaauuGGGACCcaaGag 88     
+                       +AUC:C ::GG   :::AAU:C::::  C    AA UCA:UG GAGUUCUGCCA:UGACUU    G  ::::G:AUU::: CC:: G:G
+  NC_006108.5 4814634 GGAUCACUGUGGagAUGAAAUCCCUGCACCAUGCAAGUCAGUGGGAGUUCUGCCAUUGACUUCAGCGAAGCAGGGAUUUCACCCACUGUG 4814545
+                      ***********9667*************************************************************************** PP
+
+                           NC
+                      :::: CS
+     mir-1784      89 GAgA 92     
+                          
+  NC_006108.5 4814544 CUUC 4814541
+                      **** PP
+
+>> mir-3524  mir-3524 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (29) ?      0.22   33.1   0.0  cm        1       84 []     5473854     5473773 - .. 0.88    no 0.43
+
+                                       vvvvv     v                      v     vvvvv                  NC
+                      <<<-<<--<<-<<----<<<<<<<--<<<<<<-<<<~~~~~~>>>->>>>>>-->>>>>>>---->>->>-->>->>> CS
+     mir-3524       1 GUCuCUuuCAaCCugaaCCAUUCUauGAUUCUgUGA*[12]*UCAgAGAAUCauAGAAUGGuugaGGuUGauAGaGAC 84     
+                      GUC+ UUUCAACC  + CCAUUCU+UG  UCUGUGA      UCA AGA  CAUAG      U +GGUUG++A +GAC
+  NC_006108.5 5473854 GUCCUUUUCAACCAAG-CCAUUCUGUGAUUCUGUGA*[17]*UCAUAGAGCCAUAG------UUGGGUUGGAAGGGAC 5473773
+                      ***********99888.68999*************9...7..9***********99......344999********** PP
+
+>> mir-8  mir-8/mir-141/mir-200 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (30) ?      0.24   32.8   0.0  cm        1       76 []     2601075     2601151 + .. 0.98    no 0.43
+
+                            v v                    v                  v                    v v       NC
+                      :::::<<-<<<<<.<<<<---<<<<<<<<<<________________>>>>>>>>>>--->>>>->>>>>.>>::::: CS
+        mir-8       1 auCuGcgucCAUC.UUACCgggCAGUgUUgGAUuguuuauuaagUcUCuAAcACUGcCUGGUAAuGAUGg.cgccGgu 76     
+                      + CU :   CAUC UUACC+G:CAGUG U GA U   U   A    UC A CACUG:CU GUAA GAUG   :C G +
+  NC_006108.5 2601075 CCCUUUAAACAUCgUUACCAGACAGUGUUAGAAUAGAUCCAAGAAAUCCAGCACUGUCUAGUAA-GAUGCcCACAGAG 2601151
+                      *********************************99999988999999*****************.************* PP
+
+>> mir-574  microRNA mir-574
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (31) ?      0.24   42.1   1.7  cm        1       77 []     4835053     4835130 + .. 0.99    no 0.23
+
+                                 v v                                                 vv              NC
+                      <<<<<<<<<<<<-<-<<<<<<<<<<<<<<<<<--<<____._>>-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>:: CS
+      mir-574       1 cGcGGGCGuGuGAGUGuGuGuGuguGaGuGuGUGuCGCUC.GGgUCCaCgCuCaugCaCaCaCCCaCaCGCCCgCgCu 77     
+                      :G:G:G:GUGU   U:U:U U:::U::::GU:U ::  U   ::U :AC::::A:::A A:A:  ACAC:C:C:C:C 
+  NC_006108.5 4835053 UGUGUGUGUGUAUAUAUAUGUAUAUAUAUGUAUACAUAUGuAUGUAUACAUAUAUAUAUAUAUACACACACACACACA 4835130
+                      ************************************999888************************************ PP
+
+>> mir-4773  mir-4773 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (32) ?      0.26   38.3   0.0  cm        1       78 []     4437674     4437758 + .. 0.96    no 0.39
+
+                      v       v                                            v       v NC
+                      <<<<<<<<<<<<<<<<<<<<<<<<<<<<~~~~~~>>>>>>>>>>>>>>>>>>>>>>>>>>>> CS
+     mir-4773       1 uGCuCCCCaGCCuuuCuauGCuCCuGuu*[22]*aaCaGGaGCauaGaaaGGCuGGGGaGCa 78     
+                       :::CCC: GCC:UUCUAUG:U:CU:U:      :A:AG:A:CAUAGAA:GGC :GGG::: 
+  NC_006108.5 4437674 CCAACCCAAGCCAUUCUAUGAUUCUAUG*[29]*CAUAGAAUCAUAGAAUGGCCUGGGUUGA 4437758
+                      **************************97...9..79************************** PP
+
+>> mir-3154  mir-3154 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (33) ?      0.28   35.7   0.1  cm        1       86 []     2931851     2931959 + .. 0.91    no 0.70
+
+                                               v        v                  v        v                 NC
+                      :<<<<<<<<--<<<--------<<<<<<<<<<-<<<<<<<~~~~~~>>>>-->>>>>>->>>>>>>>>>>>>>>>->>: CS
+     mir-3154       1 AGGCCCCucCUuCcCAgCCccAGCucCcgCuCACCCCuGC*[13]*GCaGAAGGGGaGUcgGgaGCgGagaGGGGACCa 86     
+                       G:CCCC:CC :CCC    CCA C +C::C:: C CCU:C      G:AGAAG G::G ::G  G GG:G:GGGG :C 
+  NC_006108.5 2931851 UGCCCCCCCCCCCCCCCUUCCAUCUUCUCCCUCCACCUCC*[37]*GGAGAAGGGAGGGGGG-GGGGGGGGGGGGGGCU 2931959
+                      **************************************98...9..99**********5555.6666666666666*** PP
+
+>> uc_338  TUC338
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (34) ?      0.29   29.4   0.0  cm        1      180 []     6661287     6661455 + .. 0.79    no 0.62
+
+                        v       vvvvvv       v             vv                          v                  v      NC
+                      :(((--((--(((((((((((--(((((-((((((,,<<<-<-----<--<<<<<<-----<<<<<_____________~~~~~>>>>>- CS
+       uc_338       1 UuGAaaGcccuGGAGACUGAaGUCCcCuauuuauCCACaGAgCAGGUAcaGCacggGCAGcGgCaGUGCAgGCUUuuCC*[4]*CuGcCC 89     
+                       U AAAGCC   GAGAC GAAG   :CU U :::CCA +:A:CAGGUACAG AC::      GC       GCUU++CC       GC  
+  NC_006108.5 6661287 CUGAAAGCCUCCGAGACAGAAGCCUUCUGUUUGCCCACUUAACAGGUACAGUACAG-----GGCUA-----GCUUCCCC*[5]*CGGCUG 6661366
+                      *******************************************************9.....55543.....45554443..4..567778 PP
+
+                                         vv                                    v        vvvvvv        v          NC
+                      ----->>>>>>->--->->>>,,<<<<<<<__.___>>>>>>>,)...))))))))))---)))))))))))--))---))):::::::: CS
+       uc_338      90 CacCaccguGCCUCAaccCuGaccuggaggGa.cCAccuccagaG...gugagaGgGGuuguUCAGUCUCCauggCCuuUCaAUCcUUgG 175    
+                      CACC ::GU C U   :C:   CCUGG:GGG  C  CC:CCAG+G   ::: GAG:  U+GUUC G        GCC UU A   CU  G
+  NC_006108.5 6661367 CACCGAUGUGCGUGCCCCA-CUCCUGGGGGGUuCUGCCCCCAGGGgcuGCAGGAGGGUUAGUUCUG-----AGAGCCGUUGACCUCUGUG 6661450
+                      99999********888664.5677777777763667999999987244555555544455577776.....78***9999999999999* PP
+
+                            NC
+                      ::::: CS
+       uc_338     176 CuucU 180    
+                      C++  
+  NC_006108.5 6661451 CCAUG 6661455
+                      ***** PP
+
+>> MIR774  MIR774 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (35) ?      0.42   35.7   0.0  cm        1       98 []     5789667     5789558 - .. 0.92    no 0.47
+
+                             v                      v    v   v                           v   v   v               NC
+                      ::<<<<<<<<<<<<<<<<<<<<<<<<<<<<<...-<<<<<---<<<<<-<<<__~~~~~>>>>>>>>>>>>>-..>>>>>>>>>>>>>>> CS
+       MIR774       1 ucacuugaGauGgagauguGGgugaccaaua...cuuaagAuUuuGgucaacUU*[2]*guuacCaacuuaau..uauuggucacCCaca 82     
+                      U A:UUG :A:GGA::U UG:::G C:::U    C U::    UUGGUCA:CUU     G:UACCAA ::A     A:::G C:::CA A
+  NC_006108.5 5789667 UGAGUUGAAAGGGACCUUUGAAGGUCAUCUAgucCAUCUAGGAUUGGUCAGCUU*[9]*GUUACCAAAAGAACacCAGAUGGCCUUCAGA 5789574
+                      ********************99999999998677779999999********997..9..999999999999877789999999999**** PP
+
+                              v        NC
+                      >>>>>>>>>>>>>>:: CS
+       MIR774      83 ucucCauCucaaguUU 98     
+                      ::UCC:U: CAA:U U
+  NC_006108.5 5789573 GGUCCCUUCCAACUCU 5789558
+                      **************** PP
+
+>> IsrM  IsrM sRNA
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (36) ?       0.5   25.1   0.0  cm        1      329 []     2921953     2922211 + .. 0.90    no 0.42
+
+                         v                  vv    v  v     v                                v           v        NC
+                      :{{{{{{{{{{{{,,,,,,[[[[[[[[[[[[[.,,,((((,,,<<<<<_____>>>>>,<<<<-<<<-<<<___________>>>-->>> CS
+         IsrM       1 AgCuuCaugCuuCUUUUUUaGauaGuuuGuuG.UUCGuGCCUAuCGuaCACUUugCGaCuguuCguuUuGCAUCUAUUCCAAGCaUCaau 89     
+                       :: UC  :: :C U UUU:GA   UUU UU  UUC: :: U :C:::   UU:::G: U:UU :UUUU:  U UA  C AA :A  AA:
+  NC_006108.5 2921953 UGUCUC--AAUACAUCUUUGGAUAGUUUAUUCcUUCCCUUUUGACAGUUUUUUACUGUUUUUUUUUUUUUCCUUUAAGCAAAAAAAAAAA 2922040
+                      *****9..889999*****************7789999999************************************************* PP
+
+                                         v                                                   v  v    v     v     NC
+                      ->>>>,,,,,,,,,,,,)))),,,,,,,,,,,,,,,,,,,,,,,,,,,~~~~~~~~~~~~,,,,,,,,,,,]]]]]]]]]-----]]]], CS
+         IsrM      90 CaauaCAAUAAAUUUCAGCaCCAUAAAGAUAAUAAUAAAAAUCAACAA*[23]**[44]*AUAAAAAUCUCCaaCaaaCuCAACCauCuC 234    
+                       AA:A AA AAA   CA:: :CA AA                                  AUAA AA   C AA AAA   AACC UC:C
+  NC_006108.5 2922041 AAAAAAAAGAAAACCCAAAAGCAAAAC---------------------*[ 4]**[ 5]*AUAAUAACAAC-AACAAAUGAAACCCUCCC 2922105
+                      ***********************9986........................7.....9..77777777777.999999999999999999 PP
+
+                                                 v              v  v        v  v            NC
+                      ,,,,,,~~~~~~,,,}}}}}---}}}}}}}-----<<<<<<<<<-<<<____>>>->>>>>>>>>:::: CS
+         IsrM     235 CCCCAC*[32]*UUUGaaGuUCAauGaaGuCUACUaaGcccGcacaGcAcAAgCucugCgggCuuuuuu 329    
+                        CC C       UUG: ::     GA ::   CU:AG :C: : AGC  A GC  : :G: CU:UU  
+  NC_006108.5 2922106 UUCCUC*[52]*GUUGUGUUG----GACACAGCCUCAGUUCCAGGAGC--A-GC--CGGGAGCUGUUAG 2922211
+                      888765...*..888888875....89999999999999988665333..3.44..66899******** PP
+
+>> mir-483  mir-483 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (37) ?      0.65   36.3   0.0  cm        1       75 []     2775332     2775264 - .. 0.87    no 0.61
+
+                                 v                                                  v             NC
+                      :::<<<<<<<<<<<<<<<---<-<<<<-<<<________________>>>>>>>>->>>>>>>>>>>>>>>:::: CS
+      mir-483       1 GaGGggGAaGaCGGGAGGAaAGaAGGgaGUGGUUUuguGcagCUCCUCACuCCUCuCCUCCCGuCuUCucCUcuc 75     
+                         GG:G::G:  GG GGA+AGA::GG :::G U     C +CUCCU:::UC::C CC CC +:C::C:CCUCUC
+  NC_006108.5 2775332 UUCGGAGGGGG--GGGGGAGAGAGAGGGAGAGAUA---UCUCCUCCUUCUUCUCCACCUCC-UCCUCCUCCUCUC 2775264
+                      **********8..6778888888888888888776...57799****99999999999877.59*********** PP
+
+>> mir-483  mir-483 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (38) ?      0.65   36.3   0.0  cm        1       75 []     3533231     3533156 - .. 0.82    no 0.71
+
+                                v              vv                          vv           v            NC
+                      :::<<<<<<<<<<<<<<<---<-<<<<...-<<<________________>>>>>>>>->>>>>>>>>>>>>>>:::: CS
+      mir-483       1 GaGGggGAaGaCGGGAGGAaAGaAGGg...aGUGGUUUuguGcagCUCCUCACuCCUCuCCUCCCGuCuUCucCUcuc 75     
+                      G  GGG:::G  GGGAGGA+AGAA:+G   AG:GG    G GCAGC C  C:C  :UCUCCUCCC  C:::UCCUC++
+  NC_006108.5 3533231 GGCGGGAGGGAGGGGAGGAGAGAAAAGccgAGCGGAGCGGGGCAGCGCAGCGC--UUCUCCUCCCUCCCCUUCCUCCU 3533156
+                      **********************9764334456666666666666666655666..69********************* PP
+
+>> mir-8  mir-8/mir-141/mir-200 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (39) ?      0.69   31.1   0.0  cm        1       76 []     2603404     2603478 + .. 0.96    no 0.43
+
+                           v                       v                  v                      v      NC
+                      :::::<<-<<<<<.<<<<---<<<<<<<<<<________________>>>>>>>>>>--->>>>->>>>>>>::::: CS
+        mir-8       1 auCuGcgucCAUC.UUACCgggCAGUgUUgGAUuguuuauuaagUcUCuAAcACUGcCUGGUAAuGAUGgcgccGgu 76     
+                      + C   : :CAUC UUACC+GGCAG :UU GA   + + +  A   UC AA: CUGCC  GUAA GAUG::   GG 
+  NC_006108.5 2603404 CACCACAAUCAUCaUUACCAGGCAGUAUUAGAAAAACAGA-GAACAUCCAAUGCUGCCCAGUAA-GAUGGUAAUGGC 2603478
+                      *************99******************9998886.77788899**************9.************ PP
+
+>> mir-4436  mir-4436 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (40) ?      0.69   32.4   0.0  cm        1       85 []     2931853     2931952 + .. 0.94    no 0.69
+
+                                                                               NC
+                      :<<<<<<<<<<<<<<<<<<-<<<<<~~~~~~>>>>>->>>>>>>>>>>>>>>>>>: CS
+     mir-4436       1 uCCuCaCuuguCCaCuucuGCCuGc*[35]*gCaGGaagaaGuGGacaaGuGaGGa 85     
+                       CC:C:C::::CC:CU C: :CU C      G AG:A:G AG:GG::::G:G:GG 
+  NC_006108.5 2931853 CCCCCCCCCCCCCCCUUCCAUCUUC*[50]*GGAGAAGGGAGGGGGGGGGGGGGGG 2931952
+                      ********************99977...9..669999******************* PP
+
+>> mir-1784  mir-1784 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (41) ?      0.73   33.4   0.0  cm        1       92 []     3398187     3398283 + .. 0.99    no 0.43
+
+                              v             v        v            v          v            v        v          v  NC
+                      ::::<<<<<<<<....-<<<<<<<<<<<<<<<<<<----<<<<<<__________>>>>>>---->>>>>>>>>>>>>>>>>>-.>>>>> CS
+     mir-1784       1 uaAUcuCuugGG....GCCCaauuCuGCuCccauuGAAAuCaguGAGAGUuCUGCCacuGaCUUAaauggGaGCaGaauuGGGA.CCcaa 85     
+                       AA :::U ::G    G:C::A :C:GCUCC ::UG A UCAGU   A     G  ACUGACUU A:: GGAGC:G: U::G:A C:: A
+  NC_006108.5 3398187 AAACUGUUAUAGaaauGUCUGACCCAGCUCCAGCUGCAGUCAGUGGAAAAAGAGUAACUGACUUCAGUGGGAGCUGGAUUAGAAcCUAAA 3398276
+                      ********************************************99999999999*****************************99**** PP
+
+                              NC
+                      >>>:::: CS
+     mir-1784      86 GagGAgA 92     
+                      :::G GA
+  NC_006108.5 3398277 ACAGUGA 3398283
+                      ******* PP
+
+>> mir-3149  mir-3149 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (42) ?      0.74   34.9   0.0  cm        1       83 []     3451838     3451795 - .. 0.99    no 0.23
+
+                         v       v                          v       v    NC
+                      <<<<<<<<<<<<<<<<<<<<<<~~~~~~>>>>>>>>>>>>>>>>>>>>>> CS
+     mir-3149       1 auaCauaCauguaCaCaCaCau*[39]*auGuGuGuGuauguGuguGuau 83     
+                      AUA A:A:A:: ACACACACAU      AUGUGUGUGU ::U:U:U UAU
+  NC_006108.5 3451838 AUACAUAUAUACACACACACAU*[ 0]*AUGUGUGUGUAUAUAUAUAUAU 3451795
+                      *********************9......9********************* PP
+
+>> mir-8  mir-8/mir-141/mir-200 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (43) ?      0.74   31.0   0.0  cm        1       76 []     2598644     2598567 - .. 0.97    no 0.42
+
+                           v      v           vv                          vv            v     v      NC
+                      :::::<<-<<.<<<<<<<---<<<<<<<<<<________________>>>>>>>>>>--->>>>->>>>>.>>::::: CS
+        mir-8       1 auCuGcgucC.AUCUUACCgggCAGUgUUgGAUuguuuauuaagUcUCuAAcACUGcCUGGUAAuGAUGg.cgccGgu 76     
+                        CUG :U:C : CUUACC+G:CA  :UU:GAU +++ ++U++ U UC:AA:  UG:CUGGUAAUG :G: : +CG  
+  NC_006108.5 2598644 UGCUGAUUGCuGUCUUACCAGGCAAAGUUAGAUCUAGCUAUUUCUGUCUAAUACUGUCUGGUAAUGCCGUcAAUCGCA 2598567
+                      *****88776599***************************************************************** PP
+
+>> mir-4433  mir-4433 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (44) ?      0.82   33.7   0.1  cm        1       83 []     2931852     2931954 + .. 0.97    no 0.70
+
+                                          vv                      vv                     NC
+                      :<<<<<<<<<<<<<<<<<<<<<<<<<<<<<~~~~~~>>>>>>>>>>>>>>>>>>>>>>>>>>>>>: CS
+     mir-4433       1 uauCCuCCuuacGuCCCacCCCCcaCuCCu*[23]*aGGaGugGGGGguGGGaCguaaGGaGGaua 83     
+                       ::CC:CC:::C::CC :CC++C::CUCC:      :GGAG::G  GG: GG::G:::GG:GG::+
+  NC_006108.5 2931852 GCCCCCCCCCCCCCCCUUCCAUCUUCUCCC*[45]*GGGAGAAG--GGAGGGGGGGGGGGGGGGGG 2931954
+                      ********************9999999997...*..79999999..99****************** PP
+
+>> mir-4875  mir-4875 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (45) ?       0.9   32.6   0.0  cm        1       73 []      827765      827700 - .. 0.80    no 0.30
+
+                                                  v v       v v                                NC
+                     <<<<<<-<<<-<<--<<<-<<<<<<<<--<<<_______>>>-->>>>>>>>->>>-->>->>>->>>>>>:: CS
+     mir-4875      1 gCGUUguUAUAgGaCUUUCUAUUUUGUGuuguuUUCUuuauaggACAAAAUAaAAAugCcGAUAAcAACGcaU 73    
+                     G GUU:UU       UUU U UUUU     : UUUCU+  :AGG  AAAA AAAAA++  G  AA:AAC CA 
+  NC_006108.5 827765 GGGUUUUUUUGU---UUUGUUUUUUUU---UCUUUCUGGAAAGGGAAAAAAAAAAAGC-AGGAAAAAACCCAC 827700
+                     ******998764...999999999965...4456688888888877777777777776.788999******** PP
+
+>> mir-4433  mir-4433 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (46) ?      0.94   33.4   0.3  cm        1       83 []     6507412     6507489 + .. 0.82    no 0.74
+
+                                 vvv             v  vvv                vvv  v             vvv            NC
+                      :<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<_________~~~~~>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>: CS
+     mir-4433       1 uauCCuCCuuacGuCCCacCCCCcaCuCCuGuuugUaaUaaaa*[6]*aaaCaGGaGugGGGGguGGGaCguaaGGaGGaua 83     
+                      +::CC:CC:::   CCC:CCCCC  C  CU   UG +  A AA     A   AG  G  GGGGG:GGGA++:::GG:GG::+
+  NC_006108.5 6507412 CCCCCCCCCCC---CCCCCCCCCGGCUUCUCCAUGAGCCACAA*[4]*AGACAGUGGUUGGGGGGGGGAAUGGGGGGGGGGG 6507489
+                      **********9...************99985444444444333..3..4445999*************************** PP
+
+>> mir-3524  mir-3524 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (47) ?      0.98   30.9   0.0  cm        1       84 []     5974217     5974107 - .. 0.96    no 0.43
+
+                                  v      v                            v      v             NC
+                      <<<-<<--<<-<<----<<<<<<<--<<<<<~~~~~~>>>>>-->>>>>>>---->>->>-->>->>> CS
+     mir-3524       1 GUCuCUuuCAaCCugaaCCAUUCUauGAUUC*[22]*GAAUCauAGAAUGGuugaGGuUGauAGaGAC 84     
+                      GUC CUU+  AC U AA C UUC +UGAUU        AAUCAU GAA G  U + GU  ++AG+GAC
+  NC_006108.5 5974217 GUCACUUCUGACCUAAAUCUUUCUGUGAUUU*[49]*GAAUCAUGGAACGGGUUGAGUUGGAAGGGAC 5974107
+                      *****************************95...9..59***************************** PP
+
+>> uc_338  TUC338
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (48) ?         1   27.5   0.0  cm        1      180 []     3711465     3711296 - .. 0.82    no 0.46
+
+                        v        vv     vv            v    vv           v  vvv       v v                 v v     NC
+                      :(((--((--(((((((((((--(((((-((((((,,<<<-<-----<--<<<<<<-----<<<<<_________________>>>>>-- CS
+       uc_338       1 UuGAaaGcccuGGAGACUGAaGUCCcCuauuuauCCACaGAgCAGGUAcaGCacggGCAGcGgCaGUGCAgGCUUuuCCCACACuGcCCC 90     
+                      UU AAAGC+C   AGACU  AG C :CU :UU UC A    : AGG A A CA     AG :: A UGCA   UU UCC A A U ::C 
+  NC_006108.5 3711465 UUGAAAGCACUGAAGACUUCAGCCUUCUCUUUUUCAA----AAAGGCAGAACACAGAAAG-CAGACUGCAC-AUUGUCCGAGACUGUGCA 3711382
+                      ***********************************99....5556666666665554444.4555577776.666778888888888888 PP
+
+                          vvv  v        vv      vv       vv       v            vv     vv         v               NC
+                      ---->>>>>>->--->->>>,,<<<<<<<_____>>>>>>>,)))))))))))---)))))))))))--))---)))::::::::::::: CS
+       uc_338      91 acCaccguGCCUCAaccCuGaccuggaggGacCAccuccagaGgugagaGgGGuuguUCAGUCUCCauggCCuuUCaAUCcUUgGCuucU 180    
+                       CCA   UG  U   :   +  ::::  GGA+ AC  ::::AGG GA:AG: G + U  AGUCU     GC   U AAU + U GCUUCU
+  NC_006108.5 3711381 GCCAGCAUGCUUGGCU--GUGAUCCAUAGGAAAACC-UGGAAGGUGAAAGAGG-AAUCCAGUCUGAGCAGCUACUAAAUGUCUCGCUUCU 3711296
+                      8888888887665554..458899999999999996.79999********655.78999******************************* PP
+
+>> mir-4536  mir-4536 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (49) ?       1.2   35.2   1.7  cm        1       88 []     4835054     4835125 + .. 0.55    no 0.22
+
+                                                           v                   v                               NC
+                      <<<<<<<<<<<<<<<<<<<<<<<<<-<<<<-------<<<-<<<______>>>-->>>>>>>->>>>>>>>>>>>>>>>>>>>>>>>> CS
+     mir-4536       1 auGuGGuaGauauauGCaCGauauagguacguaugUaugcaugcAuAaAagcagggcaguacauauauCGuGCauauauCuaCCaCau 88     
+                      :UGUG :  :UAUAU::A:  UAUA+:UA:G          U::A+A+A ::A G  +:UA:AUAUA  :U::AUAUA:  : CACA:
+  NC_006108.5 4835054 GUGUGUG-UGUAUAUAUAU-GUAUAUAUAUG----------UAUACAUAUGUAUG--UAUACAUAUAU-AUAUAUAUACA-CACACAC 4835125
+                      ****844.44555544433.34444444443..........66666666677755..36666666664.34444555444.448**** PP
+
+>> Fibro-purF  Fibro-purF RNA
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (50) ?       1.2   28.0   0.0  cm        1       75 []     3755705     3755784 + .. 0.92    no 0.56
+
+                            v             v      v           v         v       v                    NC
+                      ::::(((((((,,,,,,<<<<<____>>>>>,,,,,,,<<<_~~~~~~>>>,,)))))))::::::::::::::::: CS
+   Fibro-purF       1 GuCCGcUuCccuGCUUGCACCCGUacGGGUGGGCUAuGaCCu*[ 4]*GGuAgggGaAgCAuaCAUUUCaAAGAGGC 75     
+                      G CC:: UC:CUGC UGC C C  A G G G GCU UG: C+      G :AGG:GA :: U+ AUUUC AAGAGG 
+  NC_006108.5 3755705 GCCCAGCUCUCUGCCUGCUCACACA-GGGAGUGCUUUGUGCC*[10]*GAAAGGGGACCUGUUAAUUUCUAAGAGGU 3755784
+                      ********************99765.66*******9998665...9..668************************** PP
+
+>> snR191  Small nucleolar RNA snR191
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (51) ?       1.5   28.3   0.0  cm        1      273 []     4704073     4704319 + .. 0.80    no 0.42
+
+                           vv                       vv                  v      v               v                 NC
+                      ::<<<<<-----------~~~~~~------>>>>>,,,,,,,,,,((((((,,<<<<<<<<-~~~~~~-->>>>>>>>,,,,<<<<<--- CS
+       snR191       1 uACCAAAaCUuUUUGUCA*[50]*UAcaGUUUUGGAAGAuUAAUAcuGcuCgCuucuccccu*[21]*UuggggagaaauuAGgaGGauA 149    
+                      +ACC:+A C +UUUGU A      UA+ G   :GG A    AA ACUGCU   :U:U C:CU       UG:G A:A:A  A G      
+  NC_006108.5 4704073 CACCUUAGC-CUUUGUAA*[40]*UAAGGA--AGGGAUCCCAACACUGCUC-UGUUUACUCU*[20]*CUGGGAAAACAACAUG------ 4704200
+                      ****98765.55666655...7..333322..455555678********96.3666666665...8..4566666666666665...... PP
+
+                           v     v                    v         v             v      v          v     v          NC
+                      <<<<<<<___>>>>>>>--->>>>>,,,,,,,))))))-<<<<-<<<<------.<<<<<--<<<<--<<<<<<<_____>>>>>>>--- CS
+       snR191     150 AccuucgUUUugaaggUAUACCucCgcUUUUAGagCaggGaGGAuCuuauGAGU.uGAGcuUugguUaccuggGguUUuucCccaggauu 238    
+                      :C:UU :UUU: AA:G:A A   C  +  UUA AGCAG+GAG AUCUU   AGU U :G:UU: :U  ::: :G  UU + C: :::+UU
+  NC_006108.5 4704201 GCUUUAAUUUUAAAAGCACA---CAAACAUUAAAGCAGUGAGCAUCUUGGCAGUuUAGGUUUGUCU--UAUGAGCCUUCAUCUUGUACUU 4704285
+                      ******************99...6688899999*******************96367888888888..7899****************99 PP
+
+                           v       v           v          NC
+                      --->>>>--->>>>>----->>>>->>>>:::::: CS
+       snR191     239 caUaccauuUgCUCgUAGUAaaGaaCCuCACAauu 273    
+                       + A: :U+ :C: G AG  AAGAA CUCACA  U
+  NC_006108.5 4704286 AUCAGCCUA-ACCCGGAGGCAAGAAUCUCACAGAU 4704319
+                      999999998.888899******************* PP
+
+>> mir-207  microRNA mir-207
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (52) ?       1.6   37.0   0.0  cm        1       79 []     3533233     3533153 - .. 0.92    no 0.70
+
+                              v           v v  v      v               v        v  v  v         v        NC
+                      :<<<-<<<<<-<<<<<<--<<<<<<<<<<<<<<<<-<__~~~~~>->>>>.>->>>>>>>>>->>->>>>>>>>>>>>>>: CS
+      mir-207       1 gagGcaGggGCGaGGgGCUGcggGgGgagCcggGCGGAG*[4]*CGGCcu.gcGcuuCcCccggCUCcCCuCCccCuCcuU 79     
+                      +:G C:G: G :AGGGG  G : G: :AGCC: GCGGAG     C GC : GCGCU: :C :  CUCCCCU:C :C: C:U
+  NC_006108.5 3533233 AGGGCGGGAGGGAGGGGAGGAGAGAAAAGCCGAGCGGAG*[5]*CAGCGCaGCGCUUCUCCUCCCUCCCCUUCCUCCUCCU 3533153
+                      *************************************97..5..888877678**************************** PP
+
+>> CrcZ  Pseudomonas sRNA CrcZ
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (53) ?       1.7   24.2   0.0  cm        1      398 []     2153666     2153914 + .. 0.75    no 0.47
+
+                                                                       vv    v                      v    vv      NC
+                      :::::::::::::::::::::.:::::::::::::::::::::::::::<<-<<<<______________________>>>>->>,,,,, CS
+         CrcZ       1 ACAAcAAaAAuAAcAAGCAgu.gaaaaacacAAUAAaAACAAgACGuAaCGaCUCugaCAuAACAAaAACAAcAcGGCaGAGGCGcAGCU 89     
+                      A AA AAAAA AA+AAGCAG+  AAA   ACAA AAAAACAA AC +AAC+    ++ACA AACAAAA CAA AC          CAG  
+  NC_006108.5 2153666 AAAAAAAAAAAAAAAAGCAGAcAAAACCGACAAGAAAAACAAAACAAAACA----AAACAAAACAAAACCAAAAC----------CAGAA 2153741
+                      ********************72555688999*****************954....36888888888888888775..........66667 PP
+
+                                                                                                                 NC
+                      ,,,,,,,,,~~~~~~~,,,,,,,,,,,,,,,,,<<~~~~~~>>,,,,,,,,,,,,,,,,,,,,((((((~~~~~~,)))))):::::::: CS
+         CrcZ      90 AACuGAUUu*[124]*aAAUaCGUUUGCUCUUGgC*[13]*GccgcccaaAAacaacugUaaaggGccg*[91]*CcggCccucuguuuu 388    
+                      AA +GAUUU                UGCU U G:C      G:C + CA A  CA CUG   +::G::G      CC::C::U++ UU  
+  NC_006108.5 2153742 AAGAGAUUU*[  6]*---------UGCUUUCGAC*[25]*GUCCUGCACAUCCAGCUGCCCUGCGGGG*[70]*CCCCCGUUUCUUUGG 2153904
+                      777777664....5...........4555555555...6..5555555555555555555555565555...8..67777889999**** PP
+
+                                 NC
+                      :::::::::: CS
+         CrcZ     389 uccugcuuuu 398    
+                      UCCU +  UU
+  NC_006108.5 2153905 UCCUUUGGUU 2153914
+                      ********** PP
+
+>> mir-6132  mir-6132 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (54) ?       1.7   29.3   0.0  cm        1       94 []     6500704     6500618 - .. 0.95    no 0.66
+
+                             v              v   v                                      v   v                  v  NC
+                      :<<<---<-<<----<<--<<<<<<<<<<<<<<---<<<<<<________>>>>>>--->>>>>>>>>>>>--->>-->>----->>->- CS
+     mir-6132       1 UGCuAUUGUCuUACUGCUACaGCaGGgCuGGggAUUGCaGcaUCCGCUGUugCuGCUGCccCCaGcCCuGCCcCuGCUGCUACCUaGUCC 90     
+                      UG:     U:UU CUGCU CAG ::GGC:G     UGCAGCAUC G UG UGCUGCUGC   C:G C:: C +CUGCUGC A  UA:U  
+  NC_006108.5 6500704 UGGUGAGGUGUUGCUGCUGCAGCGCGGCCGU---CUGCAGCAUCAGGUGCUGCUGCUGC--GCGG-CGUACAUCUGCUGC-AGGUACUGU 6500622
+                      *************************988886...89***********************..6888.7*************.678****** PP
+
+                           NC
+                      >>>: CS
+     mir-6132      91 aGCC 94     
+                       :C 
+  NC_006108.5 6500621 GCCG 6500618
+                      **** PP
+
+>> mir-466  mir-466 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (55) ?       1.7   32.8   0.1  cm        1       80 []     3830899     3830960 + .. 0.82    no 0.26
+
+                               v             v          v              v          NC
+                      :<<<<<<<<<-<<<<<<<<<<--<<<~~~~~~>>>-->>>>>>>>>>-->>>>>>>>>: CS
+      mir-466       1 UguauGuGuugauGuGuGuGuACauG*[27]*CauACaCgCaCaCauAAgaCaCauacG 80     
+                      U:UAU:U U  :UGUGUG:GUAC U        A A AC:CACACA:AA A A:AUA: 
+  NC_006108.5 3830899 UAUAUAUGUGUGUGUGUGUGUACAUU*[10]*AAGAGACACACACACAA-AUAUAUAUU 3830960
+                      *********99**********99652...4..35688**********99.********* PP
+
+>> mir-1784  mir-1784 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (56) ?       1.9   31.9   0.0  cm        1       92 []     4814541     4814634 + .. 0.98    no 0.52
+
+                             v                 v   vv       v              v       vv   v                   v    NC
+                      ::::<<<<<<<<-<<<<<<<<<<<<<<<<<<----<<<<<<__________>>>>>>---->>>>>>>>>>>>>>>>>>-..>>>>>>>> CS
+     mir-1784       1 uaAUcuCuugGGGCCCaauuCuGCuCccauuGAAAuCaguGAGAGUuCUGCCacuGaCUUAaauggGaGCaGaauuGGGA..CCcaaGag 88     
+                       AA C:C ::GGG:::AAU:C:::: :C:  GAA UCA UG  AG  CU CCA UGACUU   :G: ::::G:AUU:::   CC:: G:G
+  NC_006108.5 4814541 GAAGCACAGUGGGUGAAAUCCCUGCUUCGCUGAAGUCAAUGGCAGAACUCCCACUGACUUGCAUGGUGCAGGGAUUUCAUcuCCACAGUG 4814630
+                      *******************************************************************************6669******* PP
+
+                           NC
+                      :::: CS
+     mir-1784      89 GAgA 92     
+                        + 
+  NC_006108.5 4814631 AUCC 4814634
+                      **** PP
+
+>> mir-671  microRNA mir-671
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (57) ?       2.1   31.4   0.0  cm        1       75 []     2775268     2775330 + .. 0.63    no 0.63
+
+                                    vvvvv  vvvvv   v                 v   vvvvvvvvvv               NC
+                      :<<<<-<<-<<-<<<<<<<--<<<<<<<<<<<-<<<____>>>-->>>>>>>>>>>>>>>>>>->->>>->>>>: CS
+      mir-671       1 GGaagAgGAGGAaGCCCuGGAgGggCuGGaGGUgauGGAUguuUUCCuCCgGuuCuCaGGGCuCCACCucuuuCG 75     
+                      GG:::A:GAGGA:G+  +G      +:G: GG G::G   ::U UCC :C:  UCU     C:CC CC:C:::CG
+  NC_006108.5 2775268 GGAGGAGGAGGAGGUGGAG------AAGAAGGAGGAGAUAUCUCUCCCUCU-CUCU-----CCCCCCCCCCUCCG 2775330
+                      ************9964444......44444444444444444444444442.4444.....667779999999** PP
+
+>> lincRNA-p21_1  LincRNA-p21 conserved region 1
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (58) ?       2.1   22.3   0.4 hmm       45      169 ..     6251693     6251815 + .. 0.65     - 0.51
+
+                        :::::.:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::....::::::: CS
+  lincRNA-p21_1      45 AGuUG.ACCCGGGCAAGGUUCUAGUAGGAAGUAuUgUGUGAUUuUUUUUUUuuuUUCACACUCAGAACgUAAGUGuC....AAgGCUC 127    
+                        AGuUG ACC GGG  AGGUUCU GUAGGA   AuU+ G GAU uUUUUUUUu uU    A  CAGA  g    UG+     AA   UC
+    NC_006108.5 6251693 AGUUGcACCAGGGGGAGGUUCUGGUAGGAU--AUUA-GGGAUAUUUUUUUUUCUU----AGACAGAGUGGUGAUGCAcuggAAAAGUC 6251773
+                        44554378889999*************985..4443.456665555555544333....33344443332222221111113333467 PP
+
+                        :::::::::::::::::::::::::::::::::::::::::: CS
+  lincRNA-p21_1     128 UCgCUAUGAAGAGGAGUCACAGGAUUGGCUGGGGUGgugggg 169    
+                        U  C A G AG  G GU   AGG  UGG  GGGGUGg + gg
+    NC_006108.5 6251774 UGCCCAGGGAGGUGGGUAGUAGGCAUGGUGGGGGUGGGUUGG 6251815
+                        7778888999999999999**********9999998766554 PP
+
+>> mir-574  microRNA mir-574
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (59) ?       2.3   37.7   1.7  cm        1       77 []     4835130     4835053 - .. 0.97    no 0.23
+
+                                   v     v                                      v    v               NC
+                      <<<<<<<<<<<<-<-<<<<<<<<<<<<<<<<<--<<____._>>-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>:: CS
+      mir-574       1 cGcGGGCGuGuGAGUGuGuGuGuguGaGuGuGUGuCGCUC.GGgUCCaCgCuCaugCaCaCaCCCaCaCGCCCgCgCu 77     
+                      :G:G:G:GU U   U:U:U U:::U::::GU:U ::      ::U :AC::::A:::A A:A:  A AC:C:C:C:C 
+  NC_006108.5 4835130 UGUGUGUGUGUGUGUAUAUAUAUAUAUAUGUAUACAUACAuAUGUAUACAUAUAUAUACAUAUAUAUACACACACACA 4835053
+                      ***********************************98776689*********************************** PP
+
+>> IRES_Bip  bip internal ribosome entry site (IRES)
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (60) ?       2.5   21.5   0.0  cm        1      263 []     4846932     4846850 - .. 0.87    no 0.60
+
+                                                                                  NC
+                      :::((((((,,,,,~~~~~~~,,,,,,,,,,,,,,,,,,,,,))))))::::::::::: CS
+     IRES_Bip       1 cgCcgGCcaAGACa*[211]*GCAAGAUGAAGCUCUCCcUGGugGCcgCGaUGCUGCUG 263    
+                       G ::G CA G CA       G AAGAUGAAG UC   CUG UG C::C  UGCUGCU 
+  NC_006108.5 4846932 AGAUUGGCAGGGCA*[ 31]*GGAAGAUGAAGGUCCUGCUGAUGCCAGCACUGCUGCUC 4846850
+                      **************....7..4599********************************** PP
+
+>> mir-4433  mir-4433 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (61) ?       2.9   31.6   0.1  cm        1       83 []     2931959     2931851 - .. 0.85    no 0.70
+
+                                       vv  v vv        v            v        vv v  vv                  NC
+                      :<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<______~~~~~~>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>: CS
+     mir-4433       1 uauCCuCCuuacGuCCCacCCCCcaCuCCuGuuugUaaUa*[ 9]*aaaCaGGaGugGGGGguGGGaCguaaGGaGGaua 83     
+                       ::CC:CC:::C::CCC  CC :C CU:CU::: G + U+       :::AG:AG  : GG  GGG::G:::GG:GG::A
+  NC_006108.5 2931959 AGCCCCCCCCCCCCCCCCCCCCUCCCUUCUCCCGGAGUUG*[37]*AGGGAGAAG--AUGGAAGGGGGGGGGGGGGGGCA 2931851
+                      **********999999999998887888888876655544...9..677778775..677778888889999******** PP
+
+>> mir-1277  mir-1277 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (62) ?       2.9   32.8   2.9  cm        1       78 []     3451786     3451846 + .. 0.77    no 0.20
+
+                           vvvvv                     v            v                     vvvvv        NC
+                      <<<<-<<<<<-<<<<<<<<<<<<-<<<<<<<<<<<______>>>>>>>>>>>->>>>>>>>>>>>->>>>>->>>>:: CS
+     mir-1277       1 aCCuCCCaaaUauauauauauauGuaCGuauguguAUAUaAauguauaCGuaGauauauauguauUuuuGGUgGGuUU 78     
+                      A::U ++++AUAUAUAUAUAUA: :AC::A       A      U U::GU: :UAUAUAUGUAU      UG::U U
+  NC_006108.5 3451786 AUUUUAAUUAUAUAUAUAUAUACACACACAU------A------UGUGUGUGUGUAUAUAUGUAUG-----UGAAUAU 3451846
+                      ****988887888888887777766655543......3......4566677778999999999999.....8****** PP
+
+>> mir-3154  mir-3154 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (63) ?       3.2   31.7   0.2  cm        1       86 []     2931959     2931848 - .. 0.88    no 0.70
+
+                         v                             v                        v                   v     NC
+                      :<<<<<<<<--<<<--------<<<<<<<<<<-<<<<<<<<-~~~~~~->>>>>-->>>>>>->>>>>>>>>>>>>>>>->>: CS
+     mir-3154       1 AGGCCCCucCUuCcCAgCCccAGCucCcgCuCACCCCuGCCA*[ 9]*AGGCaGAAGGGGaGUcgGgaGCgGagaGGGGACCa 86     
+                      AG: CCC:CC :CCC       :C:CCC:::C  : CU:CC       AGG:AGAA : G:: :GGG:G:GG:G:GGG A:C 
+  NC_006108.5 2931959 AGCCCCCCCCCCCCC-------CCCCCCCUCC-CUUCUCCCG*[43]*AGGGAGAAGAUGGAAGGGGGGGGGGGGGGGCAGCU 2931848
+                      ***999999888885.......7888888888.466677774...*..6999999999999999999999999999999**** PP
+
+>> mir-H1  mir-H1 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (64) ?       3.7   35.8   0.0  cm        1       85 []     4417916     4418074 + .. 0.99    no 0.63
+
+                                                                                       NC
+                      :<<<<<--<<<<<<<<<<<<<<--<<<--~~~~~~~->>>-->>>>>>>>>>>>>>-->>>>>: CS
+       mir-H1       1 ggGGGGaaCGGgGGgUGGaaGGaaGGGaa*[ 28]*uCCCuuCCuuCCAcCCcCCGuuCCCCcg 85     
+                      G:GGGG+ :GGGGGG:G   GG  GGG++       +CCC +CC   C:CCCCCC: UCCCC: 
+  NC_006108.5 4417916 GAGGGGGGGGGGGGGGGGGGGGUUGGGGG*[102]*CCCCAGCCUUUCCCCCCCCCCUCCCCCA 4418074
+                      ***************************97....*..6*************************** PP
+
+>> Vax2os1_1  Vax2os1 conserved region 1
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (65) ?       3.7   21.3   0.1 hmm       33      144 ..     3170068     3170170 + .. 0.68     - 0.60
+
+                      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: CS
+    Vax2os1_1      33 GAGAaGUCGCGGGAGCCGCCCGGGgACUCCACAGCCCAGGCCUCUCCCAAGCCACCUCCgCUUUCCACaGCUCCuUGCCACCUUCcGUaC 122    
+                      G G aGU G GG AGCC CCC G +   CCACA CC A   CU         C C  CC C UUC  C GCUC +UGCCACCUUC+G   
+  NC_006108.5 3170068 GGGGAGUGGUGGAAGCCUCCCAGCACAGCCACAUCCAACAGCU---------CGCUGCCACCUUCUGCUGCUCGCUGCCACCUUCUGCUG 3170148
+                      2344566777777777777777665555666665555443333.........34445566677888999*****************9999 PP
+
+                      :::::::::::::::::::::: CS
+    Vax2os1_1     123 UUUcCCCAGAGCUGGaAguAgG 144    
+                       U cC C GAGCU Ga + A  
+  NC_006108.5 3170149 CUCCCACUGAGCUCGAUAAAAA 3170170
+                      99999999***99887655443 PP
+
+>> MIR408  microRNA MIR408
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (66) ?         4   25.3   0.0  cm        1      136 []     2503980     2504079 + .. 0.80    no 0.59
+
+                                      v v            v             vv       vv             v            v v      NC
+                      ::::::::::::::::<<<-<<<<<<<-<<<<<<-<<<<<-<---<<_~~~~~~>>---->>>>>>->>>>>>->>>>>>>->>>::::: CS
+       MIR408       1 aauUGGugAugAgAugGAGACaGGGAagAgGCAGaGCAuGaGAUGGaG*[40]*uCcCuCCCaUGCACUGCcUCuUCCCuGGCUCCuuuc 124    
+                      +AUU       AG +  : ACAG:G  G:G: AGAGCA:G+G     G        + UCCC:UGCACU :C:C  C:CUGG :  ++++
+  NC_006108.5 2503980 GAUUAACCCACAGGG-UGCACAGAG--GGGACAGAGCAAGGGG--AGG*[12]*-CUAUCCCUUGCACUUUCCC--CUCUGGUCUGCAGU 2504067
+                      ***999988887776.566788766..67778********663..333...7...67799*********87766..6679**8888**** PP
+
+                                   NC
+                      :::::::::::: CS
+       MIR408     125 uCuccucuuUuu 136    
+                       CUCC+CU+U+ 
+  NC_006108.5 2504068 GCUCCCCUCUAG 2504079
+                      ************ PP
+
+>> mir-1224  microRNA mir-1224
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (67) ?       4.1   32.0   0.3  cm        1       86 []     2713593     2713525 - .. 0.84    no 0.68
+
+                                                                                     NC
+                      :<<<<<<----<<<<<<<<<<<<----------~~~~~~>>>>>>>>>>>>---->>>>>>: CS
+     mir-1224       1 GuGaGGaCUcGGGaGGuGGaGGGUgGcgucgcc*[30]*CCCcCCaCCuCCUCUCuCCuCaG 86     
+                      G:GAGG   +GGG GG GG:GG: +GCGUCG +      :CC:CC CC CCUC C CCUC: 
+  NC_006108.5 2713593 GAGAGGGGCUGGGGGGGGGGGGGAAGCGUCGGU*[14]*UCCCCCUCCUCCUC-CUCCUCUU 2713525
+                      *******9999***************9998765...8..66666677777766.79****** PP
+
+>> mir-1277  mir-1277 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (68) ?       4.6   32.0   0.2  cm       13       64 ..     4835132     4835081 - .. 1.00    no 0.25
+
+                                                                           NC
+                      <<<<<<<<<<<-<<<<<<<<<<<______>>>>>>>>>>>->>>>>>>>>>> CS
+     mir-1277      13 uauauauauauGuaCGuauguguAUAUaAauguauaCGuaGauauauaugua 64     
+                      U:: U   U UGU :GUAU:U:UAUAUA A:G:AUAC: A A A   A ::A
+  NC_006108.5 4835132 UGUGUGUGUGUGUGUGUAUAUAUAUAUAUAUGUAUACAUACAUAUGUAUACA 4835081
+                      **************************************************** PP
+
+>> ceN54  Caenorhabditis snoRNA ceN54
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (69) ?       4.7   28.3   0.0  cm        1       68 []     2728179     2728131 - .. 0.90    no 0.59
+
+                                                                     NC
+                      :::<<_________________________________~~~~~~>> CS
+        ceN54       1 GUuUGUGAUGACUgcaUACGGAUCACUGGGCUCUGAAU*[28]*UA 68     
+                      GU :GUGAUGACUGC   C GAU ACUGGGCUCUG         U:
+  NC_006108.5 2728179 GUGCGUGAUGACUGCGAGCAGAUGACUGGGCUCUGCUC*[ 9]*UG 2728131
+                      **********************************9655...6..** PP
+
+>> MIR408  microRNA MIR408
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (70) ?         6   24.8   0.0  cm        1      136 []     1061664     1061527 - .. 0.92    no 0.59
+
+                                            v      v                                v                            NC
+                      ::::::::::::::::<<<-<<<<<<<-<<<<<<..........................-<<<<<-<---<<__~~~~~~>>---->>> CS
+       MIR408       1 aauUGGugAugAgAugGAGACaGGGAagAgGCAG..........................aGCAuGaGAUGGaGC*[39]*uCcCuCCCa 97     
+                      A+U  GUGA + GA G AG  A GGAAG: GC                            +G :::+GAU G:G       :CC  CC::
+  NC_006108.5 1061664 AGUAAGUGAGAGGAAGGAGGGAAGGAAGGAGCGCucggucauggaucugagggcugagugUGGGCAGGAUUGGGG*[16]*CCC-GCCUG 1061566
+                      ********************************************************9988777777889987664...8..555.89999 PP
+
+                       v      v      v                        NC
+                      >>>->>>>>>->>>>>>>->>>::::::::::::::::: CS
+       MIR408      98 UGCACUGCcUCuUCCCuGGCUCCuuucuCuccucuuUuu 136    
+                      : CA  GC :CUUCC U  CU   U ++C ++UC  U U
+  NC_006108.5 1061565 CACAGUGCGCCUUCCCUCUCUUUGUCUCCGUUUCCAUGU 1061527
+                      9999*********************************** PP
+
+>> RUF21  RNA of unknown function 21
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (71) ?       6.1   33.1   3.3  cm      571      647 ..     3554015     3554092 + .. 0.87    no 0.22
+
+                                       v                                                         v     NC
+                      ,,,,,,,,,,,,,<<<<<<--...----<<<<<<<__________________________>>>>>>>------>>>>>> CS
+        RUF21     571 uGAAAGGgUAAAGguaGUUAA...GAUAgUAUAUaCAUAUAuAUgUACAUAUAcAUAuAuAuAUAUAcAuaUUGAAUuac 647    
+                      UGAA G    AAGG::G :AA   GA A:UAUAUACAUAUAUAU+UA AUAUA+AU  AUAUAUAUA:AU UU : U::C
+  NC_006108.5 3554015 UGAACGUCAGAAGGAUGCCAAaugGAAAAUAUAUACAUAUAUAUAUAUAUAUAUAU--AUAUAUAUAUAUCUUUGCUUUC 3554092
+                      9999999999*********976669************9999998887776666655..6669999999999********* PP
+
+>> RNaseP_bact_a  Bacterial RNase P class A
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (72) ?       6.2   19.4   0.0  cm        1      367 []     3372963     3373004 + .. 0.98    no 0.45
+
+                         v      v                           v      v      NC
+                        {{{{{{{{{{{~~~~~~~---------------}-}}}}}}}}}}:::: CS
+  RNaseP_bact_a       1 cgagccggccg*[325]*ACAGAAcCCGGCUUAcaggccggcucgucau 367    
+                        : AG:::G ::       ACAGAA  CGGCUUA: : C:::CU :UC+U
+    NC_006108.5 3372963 GCAGGAGGAAA*[  0]*ACAGAAAUCGGCUUAUCUCCUUCCUACUCUU 3373004
+                        ******99999.......79***************************** PP
+
+>> SCARNA7  Small Cajal body-specific RNA 7
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (73) ?       6.2   24.9   0.3  cm        1      330 []     3643582     3643425 - .. 0.50    no 0.41
+
+                                                                                                                 NC
+                      <<<<-------------------------------------------.----------------.------------------------- CS
+      SCARNA7       1 UGGAAAUGAUGAAAUAGAGAUAAUUGGGUGUUGAAUGUUGUaUGAuU.GGAAauUUUuAAUAug.UAugUUAAgUAAUucuuauAAgUUu 88     
+                      UGG:AAUGA                            UUG AUGAUU G AAA UUU AA   G U    U  GU  UUC  A A GUU 
+  NC_006108.5 3643582 UGGGAAUGAA---------------------------UUGCAUGAUUuGCAAAGUUUGAAGGAGaUUCUGUGGGUGUUUCACAGAGGUUA 3643520
+                      ******9962...........................23333333330334444444444333312222233333334444444444444 PP
+
+                                                                                         NC
+                      ------------------------------------------------------~~~~~~~>>>>: CS
+      SCARNA7      89 AaugUUUuaUaGauacuUaauAGaGuGUGUGUGUGugUGUGUGUGUgcuUgUGg*[183]*UCCAA 330    
+                      A U+U   A AG          G+GUGUGUGUGUGUGUGUGUGUGUGC UGUG        :CCAA
+  NC_006108.5 3643519 AGUAUGACAAAGU---------GUGUGUGUGUGUGUGUGUGUGUGUGCGUGUGU*[ 45]*CCCAA 3643425
+                      4444433333222.........22222222222222222222222222222221....8..***** PP
+
+>> MIR1023  microRNA MIR1023
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (74) ?       6.5   28.4   0.0  cm       32      136 ..     3441842     3441953 + .. 0.87    no 0.47
+
+                               v  v                        v                                         v           NC
+                      <<<<<<<<<<<-<<<<<<<<<<---------------<<<<<....<<<__________________~~~~~>>>>>>>>---------- CS
+      MIR1023      32 CACUCUCUCCgUUUCcCUuCCcaUaAUGacuaGguUggucgA....ucgaguuaUuuuUUGuAuagA*[1]*cgaUcgacGaUcAggAgU 113    
+                      C CUCUC:C :U UC:CU:CC:AU+ UG +   G UG :::A    U::AG U+   UUUG+AU+ A     ::AU::: G U+ G+   
+  NC_006108.5 3441842 CUCUCUCCCUGUCUCUCUCCCUAUCCUGCAGGUGGUGCAGCAcaucUGCAGCUGAAAUUUGAAUUAA*[4]*GCAUGCUAGCUUUGAUAG 3441930
+                      ****************************************994444444777777777887776654..3..8889***********999 PP
+
+                                v  v          NC
+                      ->>>>>>>>>>->>>>>>>>>>> CS
+      MIR1023     114 ugGGaAGgGAAUcGGAGAGAGUG 136    
+                       :GG:AG:GA  : G:GAGAG G
+  NC_006108.5 3441931 GAGGGAGAGAUAUUGGGAGAGAG 3441953
+                      *********************** PP
+
+>> SNORD35  Small nucleolar RNA SNORD35
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (75) ?       6.7   27.3   0.0  cm        1       88 []     5559791     5559865 + .. 0.84    no 0.41
+
+                         v                                                                v         NC
+                      <<<<___________________________________.._____________________~~~~~~>>>>::::: CS
+      SNORD35       1 gGcagAUGAUGUcuuUaCUCACGAUGGUCUUCaGAugcC..CauuugGGGcAaUGccGAcAA*[19]*ugCcaggaa 88     
+                      G::  AUGAUGUC UU CU AC AUGGUCUUCA A G+C  CA U GG       C GA AA       ::CAGG A
+  NC_006108.5 5559791 GAGAUAUGAUGUCAUUGCUUACAAUGGUCUUCACACGUCaaCACUAGG-------CAGAAAA*[11]*CCUCAGGGA 5559865
+                      ************************************999655555554.......3344444...8..89******* PP
+
+>> mir-3132  mir-3132 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (76) ?       6.8   33.3   0.0  cm        1       75 []     2775271     2775329 + .. 0.82    no 0.63
+
+                           v  v              v            v             v  v      NC
+                      <<<<<<<<<<<-<<<<<<<<-<<<<<<~~~~~~>>>>>>>>>>->>>>>>>>>>>>>>> CS
+     mir-3132       1 GGuGGGauGgGUaGaGgaGGAGCuCag*[22]*uuGaGCCCucCCuCuCuCauCCCaCC 75     
+                      GG:GG :: :GU:GAG:AG:AG:  ::      ::  :C:CU: CUC:C: :: CC:CC
+  NC_006108.5 2775271 GGAGGAGGAGGUGGAGAAGAAGGAGGA*[ 6]*UCUCCCUCUCUCUCCCCCCCCCCUCC 2775329
+                      ********************9753332...4..333457******************** PP
+
+>> PART1_2  Prostate androgen-regulated transcript 1 conserved region 2
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (77) ?       7.3   19.6   0.0 hmm       69      166 ..     1538784     1538881 + .. 0.80     - 0.50
+
+                      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: CS
+      PART1_2      69 AGUCuAACUGGCUCuGGaaAGCUGaaaGgGCUGCaCUaGAaCaacauaGAuGAGaUAuuCCaCAcAaUAAUCUGCUUAUCUGgaaUcgCU 158    
+                      AG C  ACU GC C GGaa GCUG+aaGgGCUGCaC +G aCaa+a+aGA     U u+CC C    UA U      AUCU  +  c+CU
+  NC_006108.5 1538784 AGACCCACUUGCACAGGAAUGCUGGAAGGGCUGCACAGGCACAAUAAAGACUUUCUCUCCCUCCAGCUAUUUCUGCCAUCUCUGUGCACU 1538873
+                      566778999*****************************************9999988888888776666544333356777777777777 PP
+
+                      :::::::: CS
+      PART1_2     159 UUcccUcg 166    
+                      UU++c   
+  NC_006108.5 1538874 UUGUCCUA 1538881
+                      77765543 PP
+
+>> MIR408  microRNA MIR408
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (78) ?       7.4   24.5   0.0  cm       24      112 ..     2504057     2504000 - .. 0.95    no 0.59
+
+                              v                                             v         NC
+                      <<<<-<<<<<<-<<<<<-<---<<_________~~~~~~>>---->>>>>>->>>>>>->>>> CS
+       MIR408      24 GGAagAgGCAGaGCAuGaGAUGGaGCUaucAAc*[32]*uCcCuCCCaUGCACUGCcUCuUCC 112    
+                      :GA:G:G: AG+GCA:G+GAU G:GC    AA+      :C+  CCC:UGC CU :C:C:UC:
+  NC_006108.5 2504057 AGAGGGGAAAGUGCAAGGGAUAGGGCAGCAAAU*[ 2]*CCU-CCCCUUGCUCUGUCCCCUCU 2504000
+                      *************************99888775...7..999.9******************* PP
+
+>> mir-558  microRNA mir-558
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (79) ?       7.6   28.9   0.0  cm        1       94 []     4264035     4264079 + .. 0.98    no 0.44
+
+                                          v             v               NC
+                      ::::::::<<-<<<-<<<<<<-<<<~~~~~~>>>>>>>>>->>>->>:: CS
+      mir-558       1 gUGUGUGUGcGcguguGuGguUauu*[51]*aauacCaCaAacgGgCUG 94     
+                      GUGUGUGUG:G:GUG GUG: UAUU      AAU :CAC AAC: :CUG
+  NC_006108.5 4264035 GUGUGUGUGUGUGUGUGUGUGUAUU*[ 2]*AAUAACACGAACGUGCUG 4264079
+                      ************************8...9..8***************** PP
+
+>> MESTIT1_1  MEST intronic transcript 1, antisense RNA conserved region 1
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (80) ?       7.7   20.1   0.0 hmm       25      130 ..     2439012     2439120 + .. 0.79     - 0.43
+
+                      ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::....:::::::::::.....:::::: CS
+    MESTIT1_1      25 GuUaauGGauuAUUCaGcuCcuuUGCUUCucUcCUCUaCCACUcAUCUUUuGAgcUUUUUgcAg....cCAAAGAcUUu.....UACCCA 105    
+                      GuUa   G  u UUC   u + uU CUU uc + UCU CCACU      U+GA+cUUU U+c      +CAAAGA UUu     U  CC 
+  NC_006108.5 2439012 GUUAGCAGCGUUUUCCAAUGUGUUUCUUUUCCUUUCUGCCACU------UGGAACUUUCUUCGUuauaUCAAAGAAUUUcugccUUUCCC 2439095
+                      5666677777778888888888888888888889999**9998......79999999887765422227999999998633333455677 PP
+
+                      ::::::::::::::::::::::::: CS
+    MESTIT1_1     106 aAAAuGAGccUGAAGaGGgAGGAag 130    
+                       A    AGc UG AGaGG AGGA g
+  NC_006108.5 2439096 UAUGACAGCUUGGAGAGGCAGGAGG 2439120
+                      888999***************9954 PP
+
+>> mir-3099  mir-3099 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (81) ?       7.8   29.7   0.0  cm        1       84 []     2751745     2751830 + .. 0.86    no 0.55
+
+                                   v   v                        v    v              NC
+                      <<<--<<<<<<<<<<<<<<<<-<<<-<~~~~~~>->>>->>>>>>->>>>>>>>>>-->>> CS
+     mir-3099       1 auCGAuCCCCauCCCagCuuCCuuCCa*[29]*uAGaaAGagGuuGGGGauGGGGaAAGau 84     
+                      ::CG UC:CC:   C:: ::CC:UCC        AGA:AG:: ::GG   :GG:GAAAG::
+  NC_006108.5 2751745 CACGUUCUCCCUUCCCCAUCCCCUCCU*[31]*GAGAGAGGAGGGGGAGGGGGAGAAAGUG 2751830
+                      *************99999*******83...7..489******9999999999********* PP
+
+>> mir-4433  mir-4433 microRNA precursor family
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (82) ?       7.8   29.9   0.0  cm        1       83 []     4456364     4456452 + .. 0.86    no 0.56
+
+                                  vvv                                  vvv             NC
+                      :<<<<<<<<<<<<<<<<<<<<<<<<<<<<~~~~~~>>>>>>>>>>>>>>>>>>>>>>>>>>>>: CS
+     mir-4433       1 uauCCuCCuuacGuCCCacCCCCcaCuCC*[25]*GGaGugGGGGguGGGaCguaaGGaGGaua 83     
+                      + U  U::UU::+ +CC:CCCCCC:C:CC      GG:G:GGGGGG:GG   ::AA::A  A A
+  NC_006108.5 4456364 CUUUUUUUUUCCACACCCCCCCCCCCCCC*[34]*GGGGGGGGGGGGGG---AGAAAAAGGAGA 4456452
+                      ************99888888888888777...9..56666666666666...9*********** PP
+
+>> uc_338  TUC338
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (83) ?       8.4   24.3   0.0  cm       48      103 ..     4103271     4103326 + .. 0.99    no 0.66
+
+                                        v                 v                    NC
+                      <--<<<<<<-----<<<<<_________________>>>>>------>>>>>>->- CS
+       uc_338      48 AcaGCacggGCAGcGgCaGUGCAgGCUUuuCCCACACuGcCCCacCaccguGCCUC 103    
+                      ACAGCACG GCA + GC  UGCAGGCUU++  C     GC C  CCA CGUGCCUC
+  NC_006108.5 4103271 ACAGCACGUGCACUGGCGGUGCAGGCUUCCUGCUUGGUGCUCAGCCAGCGUGCCUC 4103326
+                      ******************************************************** PP
+
+>> IRES_Bip  bip internal ribosome entry site (IRES)
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (84) ?       8.6   19.8   0.0  cm        1      263 []     5839055     5839187 + .. 0.87    no 0.41
+
+                            v       vv         vv  vv         vv                                                 NC
+                      :::((((((,,,,,<<<~~~~~~~>>>,,<<<<<___>>>>>,,,,,,,,,,..,,,,,,,,,,,,,,,,,,,,,,,,,,,.,,,,,,,, CS
+     IRES_Bip       1 cgCcgGCcaAGACaGCA*[148]*UGCUaCaGCcUGUgGCuGGAcUgCcUGc..aacguugugcguuucUgcUGcCCaacU.gGCuGGCA 228    
+                      +  C:G ::AG     A       UGC    :CCUG GG:   ACU CCUG+   A GUU U++  U  U CUG+C A  U GG UGGCA
+  NC_006108.5 5839055 UCACAGUUUAGC----A*[ 19]*UGCAUUUGCCUGAGGUCUCACUCCCUGAugCAUGUUUUUUUCUCUUUCUGUCUACAUaGGAUGGCA 5839152
+                      *********754....3....8..5788888899999999999********9887777788888888889999999886652789***** PP
+
+                                          v               NC
+                      ,,,,,,,,,,,,,,,,,,))))))::::::::::: CS
+     IRES_Bip     229 AGAUGAAGCUCUCCcUGGugGCcgCGaUGCUGCUG 263    
+                      A  UGAA +UCUCCCU G:: C:G GA G  GCU 
+  NC_006108.5 5839153 ACUUGAAAUUCUCCCUUGAAUCUGUGAAGAAGCUA 5839187
+                      *********************************** PP
+
+
+
+Internal HMM-only pipeline statistics summary: (run for model(s) with zero basepairs)
+--------------------------------------------------------------------------------------
+Query sequence(s):                                               1  (13689958 residues searched)
+Target model(s):                                               348  (41076 consensus positions)
+Windows   passing  local HMM SSV           filter:          995388  (0.05081); expected (0.02)
+Windows   passing  local HMM MSV      bias filter:          650895  (0.03194); expected (0.02)
+Windows   passing  local HMM Viterbi       filter:           32909  (0.00151); expected (0.001)
+Windows   passing  local HMM Forward       filter:            3692  (0.0002376); expected (1e-05)
+Total HMM hits reported:                                         4  (9.089e-08)
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query sequence(s):                                               1  (13689958 residues searched)
+Query sequences re-searched for truncated hits:                  1  (646.1 residues re-searched, avg per model)
+Target model(s):                                              3722  (439374 consensus positions)
+Windows   passing  local HMM SSV           filter:        36283988  (0.1062); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:         8693591  (0.02428); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:         6661586  (0.01764); expected (0.02)
+Windows   passing  local HMM Forward       filter:          404128  (0.001321); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:          288401  (0.0009486); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:          179188  (0.000597); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:          166484  (0.0005419); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:          164527  (0.0003543); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:           29220  (4.485e-05); expected (0.0001)
+Total CM hits reported:                                         80  (1.55e-07); includes 0 truncated hit(s)
+
+Total CM and HMM hits reported:                                 84
+
+# CPU time: 2820.86u 36.27s 00:47:37.13 Elapsed: 00:07:51.28
+//
+[ok]
