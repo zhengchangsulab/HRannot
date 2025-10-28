@@ -21,11 +21,11 @@ PATH=$PATH:$PWD
 •	Infernal/1.1.2
 
 ### 2.2 Required raw data and database:
-•	Reference CDS isoforms from homologous species\
-•	RNA-seq short reads from the individual or its homologous species\
-•	High-quality DNA sequencing reads (e.g illumina short reads or HiFi long reads) from the individual\
-•	rRNA database\
-•	Rfam database
+•	Reference CDS isoforms from homologous species.\
+•	RNA-seq short reads from the individual or its homologous species.\
+•	High-quality DNA sequencing reads (e.g illumina short reads or HiFi long reads) from the individual.\
+•	rRNA database.\
+•	Rfam database.
 
 ## 3 Run the pipeline
 ### Step 0: Get the reference CDS name from each species.
@@ -37,32 +37,32 @@ grep ">" species2.reference_CDS.fa > species2.reference_CDS.name \
 ### Step 1: Use Splign to map the reference CDS isoforms of each species to the target assembly.
 reference_cds=species1.reference_CDS.fa\
 genome=my_genome.fa\
-mkdir fasta_dir\
-cp $genome fasta_dir\
-cp $reference_cds fasta_dir\
-splign -mklds fasta_dir\
-cd fasta_dir\
+mkdir fasta_dir1\
+cp $genome fasta_dir1\
+cp $reference_cds fasta_dir1\
+splign -mklds fasta_dir1\
+cd fasta_dir1\
 makeblastdb -dbtype nucl -parse_seqids -in species1.reference_CDS.fa\
 makeblastdb -dbtype nucl -parse_seqids -in my_genome.fa\
 compart -qdb species1.reference_CDS.fa -sdb my_genome.fa > cdna.compartments\
 cd ..\
-splign -ldsdir fasta_dir -comps ./fasta_dir/cdna.compartments > species1.splign.output.ref \
+splign -ldsdir fasta_dir1 -comps ./fasta_dir1/cdna.compartments > species1.splign.output.ref \
 \
 reference_cds=species2.reference_CDS.fa\
 genome=my_genome.fa\
-mkdir fasta_dir\
-cp $genome fasta_dir\
-cp $reference_cds fasta_dir\
-splign -mklds fasta_dir\
-cd fasta_dir\
+mkdir fasta_dir2\
+cp $genome fasta_dir2\
+cp $reference_cds fasta_dir2\
+splign -mklds fasta_dir2\
+cd fasta_dir2\
 makeblastdb -dbtype nucl -parse_seqids -in species2.reference_CDS.fa\
 makeblastdb -dbtype nucl -parse_seqids -in my_genome.fa\
 compart -qdb species2.reference_CDS.fa -sdb my_genome.fa > cdna.compartments\
 cd ..\
-splign -ldsdir fasta_dir -comps ./fasta_dir/cdna.compartments > species2.splign.output.ref \
+splign -ldsdir fasta_dir2 -comps ./fasta_dir2/cdna.compartments > species2.splign.output.ref \
 ......
 
-### Step 2: Use Bowtie2 to map the high-quality DNA sequencing reads to the target assembly allowing no mismatch and no gaps.
+### Step 2: Use Bowtie2 to map the high-quality DNA sequencing reads to the target assembly allowing no mismatches and no gaps.
 
 genome=my_genome.fa\
 r1=Illumina paired-end-1.fastq\
