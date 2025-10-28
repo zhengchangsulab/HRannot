@@ -23,35 +23,54 @@ PATH=$PATH:$PWD
 ### 2.2 Required raw data and database:
 •	Reference CDS isoforms from homologous species\
 •	RNA-seq short reads from the individual or its homologous species\
-•	High-quality sequencing reads (e.g illumina short reads or HiFi long reads) from the individual\
+•	High-quality DNA sequencing reads (e.g illumina short reads or HiFi long reads) from the individual\
 •	rRNA database\
 •	Rfam database
 
 ## 3 Run the pipeline
-### Step 1: Use Splign to map the reference CDS isoforms to the target assembly.
-reference_cds=reference_CDS.fa\
+### Step 0: Get the reference CDS name from each species.
+
+grep ">" species1.reference_CDS.fa > species1.reference_CDS.name \
+grep ">" species2.reference_CDS.fa > species2.reference_CDS.name \
+......
+
+### Step 1: Use Splign to map the reference CDS isoforms of each species to the target assembly.
+reference_cds=species1.reference_CDS.fa\
 genome=my_genome.fa\
 mkdir fasta_dir\
 cp $genome fasta_dir\
 cp $reference_cds fasta_dir\
 splign -mklds fasta_dir\
 cd fasta_dir\
-makeblastdb -dbtype nucl -parse_seqids -in reference_CDS.fa\
+makeblastdb -dbtype nucl -parse_seqids -in species1.reference_CDS.fa\
 makeblastdb -dbtype nucl -parse_seqids -in my_genome.fa\
-compart -qdb reference_CDS.fa -sdb my_genome.fa > cdna.compartments\
+compart -qdb species1.reference_CDS.fa -sdb my_genome.fa > cdna.compartments\
 cd ..\
-splign -ldsdir fasta_dir -comps ./fasta_dir/cdna.compartments > splign.output.ref
+splign -ldsdir fasta_dir -comps ./fasta_dir/cdna.compartments > species1.splign.output.ref \
+\
+reference_cds=species2.reference_CDS.fa\
+genome=my_genome.fa\
+mkdir fasta_dir\
+cp $genome fasta_dir\
+cp $reference_cds fasta_dir\
+splign -mklds fasta_dir\
+cd fasta_dir\
+makeblastdb -dbtype nucl -parse_seqids -in species2.reference_CDS.fa\
+makeblastdb -dbtype nucl -parse_seqids -in my_genome.fa\
+compart -qdb species2.reference_CDS.fa -sdb my_genome.fa > cdna.compartments\
+cd ..\
+splign -ldsdir fasta_dir -comps ./fasta_dir/cdna.compartments > species2.splign.output.ref \
+......
 
-### Step 2: Use Bowtie2 to map the high-quality sequencing reads to the target assembly allowing no-mismatch.
+### Step 2: Use Bowtie2 to map the high-quality DNA sequencing reads to the target assembly allowing no mismatch and no gaps.
+
 genome=my_genome.fa\
 r1=Illumina paired-end-1.fastq\
 r2=Illumina paired-end-2.fastq\
 threads=48\
 bowtie2-build $genome chicken\
 bowtie2 -p $threads -x chicken -1 $r1 -2 $r2 --score-min L,0,0 | samtools view -Sb -@ $threads-1 | samtools sort -@ $threads-1 > out.bam\
-bedtools genomecov -ibam out.bam -bga > out.bed\
-awk '$4<10{print $0}' out.bed > notsupport.region \
-(Here we consider regions supported by less than 10 reads as not supported regions.)
+bedtools genomecov -ibam out.bam -bga > out.bed
 
 ### Step 3: Use Infernal to predict non-coding RNAs against Rfam database.
 Rfam_path=Path of Rfam database\
@@ -90,20 +109,23 @@ compart -qdb transcripts.fa -sdb my_genome.fa > rna.compartments\
 cd ..\
 splign -ldsdir fasta_dir -comps ./fasta_dir/rna.compartments -type est > splign.output.rna
 
-### Step 6: Run the HRannot scripts.
+### Step 6: Run the HRannot scripts. Users can define the parameters by themselves.
 HRannot.py -g genome.fa \\\
-	-c CDS.txt \\\
-	-sh splign.output.ref \\\
-	-sr splign.output.rna \\\
-	-ns notsupport.region \\\
-	-nc non-coding-RNA.txt \\\
+    -m species1.splign.output.ref,species2.splign.output.ref \\\
+	-c species1.reference_CDS.name,species2.reference_CDS.name \\\
+	-p species1,species2 \\\
+	-r splign.output.rna \\\
+	-b out.bed \\\
+	-f 10 \\\
+	-n result_final.cmscan \\\
 	-l 300 \\\
-	-s 0.985 \
+	-s 0.985 \\\
+	-o 0.95 \\\
+	-i 0.99 \
 chmod 711 HRannot.sh \
 ./HRannot.sh
 
 ### Important Notes:
-• CDS.txt in Step 6 is the name of each reference CDSs isoforms. Examples are shown in examples/CDS.txt. \
 • Step 1, Step 2, Step 3 and Step 4 can be executed simultaneously if there are enough memory on your cluster.
 
 ## 4 Outputs
