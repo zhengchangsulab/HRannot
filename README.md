@@ -114,7 +114,7 @@ splign -ldsdir fasta_dir -comps ./fasta_dir/rna.compartments -type est > splign.
 &emsp;&emsp;usage: HRannot.py -g  -c  -sh  -p  -sr  -ns  -nc  [-l] [-s] \
 \
 optional arguments: \
-&emsp;&emsp;-h&emsp;&emsp;--help&emsp;&emsp;&emsp;show this help message and exit \
+&emsp;&emsp;-h&emsp;&emsp;--help&emsp;&emsp;&emsp;&emsp;show this help message and exit \
 &emsp;&emsp;-g&emsp;&emsp;--genome&emsp;&emsp; Required \
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Target assembled genome \
 &emsp;&emsp;-c&emsp;&emsp;--CDS&emsp;&emsp;Required \
