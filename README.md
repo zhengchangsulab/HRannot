@@ -111,29 +111,35 @@ splign -ldsdir fasta_dir -comps ./fasta_dir/rna.compartments -type est > splign.
 
 ### Step 6: Run the HRannot scripts. Users can define the parameters by themselves.
 ./HRannot.py -h \
-```usage: HRannot.py -g  -c  -sh  -p  -sr  -ns  -nc  [-l] [-s]``` \
+```usage: HRannot.py [-h] -g  -m  -c  -p  -r  -b  [-f] -n  [-l] [-s] [-o] [-i]``` \
 \
 optional arguments: \
-```-h  --help            show this help message and exit``` \
-```-g  --genome          Required``` \
-```                      Target assembled genome``` \
-```-c  --CDS             Required``` \
-```                      Homology CDS isoforms and their corresponding genes’ name``` \
-```-sh --splignh         Required``` \
-```                      Splign output from homology CDS``` \
-```-p  --prefix          Required``` \
-```                      Prefix of the corresponding Splign output``` \
-```-sr --splignR         Required``` \
-```                      Splign output from RNA-seq data``` \
-```-ns --nonsupport      Required``` \
-```                      Bed file of the genome region not supported by the high-quality sequencing reads``` \
-```-nc --noncoding       Required``` \
-```                      Non-coding RNAs in the genome``` \
-```-l  --minORFlen       Default=300``` \
-```                      Minimum length of the open reading frames identified by RNA-seq data``` \
-```-s  --minRNAsco       Default=0.985``` \
-```                      Minimum score of Splign output from RNA-seq data```\
-\
+```  -h  --help        Show this help message and exit``` \
+```  -g  --genome      Required``` \
+```                    File containing target genome sequences in fasta format.``` \
+```  -m  --splignh     Required``` \
+```                    List of output files of Splign for reference genomes. If multiple reference genomes are used, separated by comma “,”.``` \
+```  -c  --CDS         Required``` \
+```                    List of files (if more than two, separated by comma “,” in the corresponding order as for option -m, --splignh)     containing gene names of CDS in each reference genome.``` \
+```  -p  --prefix      Required``` \
+```                    List of names of references genomes. If multiple reference genomes are used, separated by comma “,” in the corresponding order as for option -m, --splignh.```
+```  -r  --splignR     Required``` \
+```                    Output file of Splign for RNA-seq data.``` \
+```  -b  --bedfile     Required``` \
+```                    Output file of Bedtools containing the genome regions mapped by high-quality sequencing reads.``` \
+```  -f  --cutoff      Default=10``` \
+```                    Minimal number (an integer) of reads to support a pseudogenization mutation.``` \
+```  -n  --noncoding   Required``` \
+```                    Output file of Infernal containing non-coding RNA sequences in the target genome.``` \
+```  -l  --minORFlen   Default=300``` \
+```                    Minimal length (nucleotide) of the open reading frames for a RNA-seq-supported gene.``` \
+```  -s  --minRNAsco   Default=0.985``` \
+```                    Minimal average identity (decimal <=1) between assembled RNA transcripts and mapped target genome regions by Splign.``` \
+```  -o  --overlap     Default=0.95``` \
+```                    Minimal overlap rate (a decimal) of a gene in the next nearest species to be considered.``` \
+```  -i  --identity    Default=0.99``` \
+```                    Minimal identity (a decimal) of a gene in the next nearest species to be considered.``` \
+
 ```chmod 711 HRannot.sh``` \
 ```./HRannot.sh```
 
