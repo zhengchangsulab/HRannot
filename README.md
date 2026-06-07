@@ -110,6 +110,30 @@ cd ..\
 splign -ldsdir fasta_dir -comps ./fasta_dir/rna.compartments -type est > splign.output.rna
 
 ### Step 6: Run the HRannot scripts. Users can define the parameters by themselves.
+./HRannot.py -h \
+usage: HRannot.py -g  -c  -sh  -p  -sr  -ns  -nc  [-l] [-s] \\
+optional arguments: \
+	-h, --help           show this help message and exit \
+	-g , --genome        Required \
+                       	 Target assembled genome \
+	-c , --CDS           Required \
+                         Homology CDS isoforms and their corresponding genes’ name \
+    -sh , --splignh      Required \
+                         Splign output from homology CDS \
+    -p , --prefix        Required \
+                         Prefix of the corresponding Splign output \
+    -sr , --splignR      Required \
+                         Splign output from RNA-seq data \
+    -ns , --nonsupport   Required \
+                         Bed file of the genome region not supported by the high-quality sequencing reads \
+    -nc , --noncoding    Required \
+                         Non-coding RNAs in the genome \
+    -l , --minORFlen     Default=300 \
+                         Minimum length of the open reading frames identified by RNA-seq data \
+    -s , --minRNAsco     Default=0.985 \
+                         Minimum score of Splign output from RNA-seq data \\
+
+An example to run HRannot: \
 HRannot.py -g genome.fa \\\
     -m species1.splign.output.ref,species2.splign.output.ref \\\
 	-c species1.reference_CDS.name,species2.reference_CDS.name \\\
@@ -121,7 +145,8 @@ HRannot.py -g genome.fa \\\
 	-l 300 \\\
 	-s 0.985 \\\
 	-o 0.95 \\\
-	-i 0.99 \
+	-i 0.99 \\
+	
 chmod 711 HRannot.sh \
 ./HRannot.sh
 
