@@ -72,7 +72,8 @@
 ```r2=Illumina paired-end-2.fastq```\
 ```threads=48```\
 ```bowtie2-build $genome chicken```\
-```bowtie2 -p $threads -x chicken -1 $r1 -2 $r2 --score-min L,0,0 | samtools view -Sb -@ $threads-1 | samtools sort -@ $threads-1 > out.bam```\
+```bash
+bowtie2 -p $threads -x chicken -1 $r1 -2 $r2 --score-min L,0,0 | samtools view -Sb -@ $threads-1 | samtools sort -@ $threads-1 > out.bam```\
 ```bedtools genomecov -ibam out.bam -bga > out.bed```
 
 ### Step 3: Use Infernal to predict non-coding RNAs against Rfam database.
