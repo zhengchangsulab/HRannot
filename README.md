@@ -7,7 +7,8 @@
 
 ## 1 Installation
 
-```git clone https://github.com/zhengchangsulab/HRannot.git``` \
+```bash
+git clone https://github.com/zhengchangsulab/HRannot.git``` \
 ```cd HRannot/bin``` \
 ```chmod 711 *``` \
 ```PATH=$PATH:$PWD```
@@ -33,7 +34,8 @@
 ## 3 Run the pipeline
 ### Step 0: Get the reference CDS name from each species.
 
-```grep ">" species1.reference_CDS.fa > species1.reference_CDS.name``` \
+```bash
+grep ">" species1.reference_CDS.fa > species1.reference_CDS.name``` \
 ```grep ">" species2.reference_CDS.fa > species2.reference_CDS.name``` \
 ```......```
 
@@ -67,13 +69,13 @@
 
 ### Step 2: Use Bowtie2 to map the high-quality DNA sequencing reads to the target assembly allowing no mismatches and no gaps.
 
-```genome=my_genome.fa```\
+```bash
+genome=my_genome.fa```\
 ```r1=Illumina paired-end-1.fastq```\
 ```r2=Illumina paired-end-2.fastq```\
 ```threads=48```\
 ```bowtie2-build $genome chicken```\
-```bash
-bowtie2 -p $threads -x chicken -1 $r1 -2 $r2 --score-min L,0,0 | samtools view -Sb -@ $threads-1 | samtools sort -@ $threads-1 > out.bam```\
+```bowtie2 -p $threads -x chicken -1 $r1 -2 $r2 --score-min L,0,0 | samtools view -Sb -@ $threads-1 | samtools sort -@ $threads-1 > out.bam```\
 ```bedtools genomecov -ibam out.bam -bga > out.bed```
 
 ### Step 3: Use Infernal to predict non-coding RNAs against Rfam database.
