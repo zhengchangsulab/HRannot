@@ -116,7 +116,7 @@ splign -ldsdir fasta_dir -comps ./fasta_dir/rna.compartments -type est > splign.
 optional arguments: \
 &emsp;&emsp;-h &emsp;&emsp;--help &emsp;&emsp;show this help message and exit \
 &emsp;&emsp;-g &emsp;&emsp;--genome &emsp;&emsp;Required \
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Target assembled genome \
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Target assembled genome \
 	-c , --CDS           Required \
                          Homology CDS isoforms and their corresponding genes’ name \
     -sh , --splignh      Required \
