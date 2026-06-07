@@ -114,25 +114,8 @@ splign -ldsdir fasta_dir -comps ./fasta_dir/rna.compartments -type est > splign.
 &emsp;&emsp;usage: HRannot.py -g  -c  -sh  -p  -sr  -ns  -nc  [-l] [-s] \
 \
 optional arguments: \
-&emsp;&emsp;-h&emsp;&emsp;--help&emsp;&emsp;&emsp;&emsp;show this help message and exit \
-&emsp;&emsp;-g&emsp;&emsp;--genome&emsp;&emsp; Required \
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Target assembled genome \
-&emsp;&emsp;-c&emsp;&emsp;--CDS&emsp;&emsp;&emsp;&emsp; Required \
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Homology CDS isoforms and their corresponding genes’ name \
-&emsp;&emsp;-sh&emsp;&emsp;--splignh&emsp;&emsp;Required \
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Splign output from homology CDS \
-&emsp;&emsp;-p&emsp;&emsp;--prefix&emsp;&emsp;Required \
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Prefix of the corresponding Splign output \
-&emsp;&emsp;-sr &emsp;&emsp;--splignR&emsp;&emsp;Required \
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Splign output from RNA-seq data \
-&emsp;&emsp;-ns&emsp;&emsp;--nonsupport&emsp;&emsp;Required \
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Bed file of the genome region not supported by the high-quality sequencing reads \
-&emsp;&emsp;-nc&emsp;&emsp;--noncoding&emsp;&emsp;Required \
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Non-coding RNAs in the genome \
-&emsp;&emsp;-l&emsp;&emsp;--minORFlen&emsp;&emsp;Default=300 \
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Minimum length of the open reading frames identified by RNA-seq data \
-&emsp;&emsp;-s&emsp;&emsp;--minRNAsco&emsp;&emsp;Default=0.985 \
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Minimum score of Splign output from RNA-seq data \
+'''-h'''
+
 \
 An example to run HRannot: \
 HRannot.py -g genome.fa \\\
