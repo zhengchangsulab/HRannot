@@ -24,11 +24,11 @@
 ```•	Infernal (1.1.2)```
 
 ### 2.2 Required raw data and database:
-•	Reference CDS isoforms from homologous species.\
-•	RNA-seq short reads from the individual or its homologous species.\
-•	High-quality DNA sequencing reads (e.g illumina short reads or HiFi long reads) from the individual.\
-•	rRNA database.\
-•	Rfam database.
+```•	Reference CDS isoforms from homologous species.```\
+```•	RNA-seq short reads from the individual or its homologous species.```\
+```•	High-quality DNA sequencing reads (e.g illumina short reads or HiFi long reads) from the individual.```\
+```•	rRNA database.```\
+```•	Rfam database.```
 
 ## 3 Run the pipeline
 ### Step 0: Get the reference CDS name from each species.
