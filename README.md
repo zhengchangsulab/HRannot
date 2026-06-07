@@ -134,9 +134,8 @@ optional arguments: \
 ```-s  --minRNAsco       Default=0.985``` \
 ```                      Minimum score of Splign output from RNA-seq data```\
 \
-\
-chmod 711 HRannot.sh \
-./HRannot.sh
+```chmod 711 HRannot.sh``` \
+```./HRannot.sh```
 
 ### Important Notes:
 • Step 1, Step 2, Step 3 and Step 4 can be executed simultaneously if there are enough memory on your cluster.
