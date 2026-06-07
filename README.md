@@ -122,7 +122,7 @@ optional arguments: \
 ```  -c  --CDS         Required``` \
 ```                    List of files (if more than two, separated by comma “,” in the corresponding order as for option -m, --splignh)     containing gene names of CDS in each reference genome.``` \
 ```  -p  --prefix      Required``` \
-```                    List of names of references genomes. If multiple reference genomes are used, separated by comma “,” in the corresponding order as for option -m, --splignh.```
+```                    List of names of references genomes. If multiple reference genomes are used, separated by comma “,” in the corresponding order as for option -m, --splignh.``` \
 ```  -r  --splignR     Required``` \
 ```                    Output file of Splign for RNA-seq data.``` \
 ```  -b  --bedfile     Required``` \
