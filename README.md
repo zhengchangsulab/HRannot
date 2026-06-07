@@ -117,8 +117,8 @@ optional arguments: \
 &emsp;&emsp;-h&emsp;&emsp;--help&emsp;&emsp;&emsp;&emsp;show this help message and exit \
 &emsp;&emsp;-g&emsp;&emsp;--genome&emsp;&emsp; Required \
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Target assembled genome \
-&emsp;&emsp;-c&emsp;&emsp;--CDS&emsp;&emsp;Required \
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Homology CDS isoforms and their corresponding genes’ name \
+&emsp;&emsp;-c&emsp;&emsp;--CDS&emsp;&emsp;&emsp;&emsp;Required \
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Homology CDS isoforms and their corresponding genes’ name \
 &emsp;&emsp;-sh&emsp;&emsp;--splignh&emsp;&emsp;Required \
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Splign output from homology CDS \
 &emsp;&emsp;-p&emsp;&emsp;--prefix&emsp;&emsp;Required \
