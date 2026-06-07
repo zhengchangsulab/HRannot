@@ -133,21 +133,7 @@ optional arguments: \
 ```                      Minimum length of the open reading frames identified by RNA-seq data``` \
 ```-s  --minRNAsco       Default=0.985``` \
 ```                      Minimum score of Splign output from RNA-seq data```\
-
 \
-An example to run HRannot: \
-HRannot.py -g genome.fa \\\
-&emsp;&emsp;-m species1.splign.output.ref,species2.splign.output.ref \\\
-&emsp;&emsp;-c species1.reference_CDS.name,species2.reference_CDS.name \\\
-&emsp;&emsp;-p species1,species2 \\\
-&emsp;&emsp;-r splign.output.rna \\\
-&emsp;&emsp;-b out.bed \\\
-&emsp;&emsp;-f 10 \\\
-&emsp;&emsp;-n result_final.cmscan \\\
-&emsp;&emsp;-l 300 \\\
-&emsp;&emsp;-s 0.985 \\\
-&emsp;&emsp;-o 0.95 \\\
-&emsp;&emsp;-i 0.99 \
 \
 chmod 711 HRannot.sh \
 ./HRannot.sh
