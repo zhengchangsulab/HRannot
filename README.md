@@ -16,14 +16,16 @@ PATH=$PATH:$PWD
 
 ## 2 Dependencies
 ### 2.1 Required tools:
-```•	Splign (2.0.0)```\
-```•	Python (>=3.6.8)```\
-```•	Bowtie2 (2.4.1)```\
-```•	SAMtools (1.10)```\
-```•	BEDTools (2.29.0)```\
-```•	Trinity (2.13.0)```\
-```•	STAR (2.7.0c)```\
-```•	Infernal (1.1.2)```
+```bash
+•	Splign (2.0.0)
+•	Python (>=3.6.8)
+•	Bowtie2 (2.4.1)
+•	SAMtools (1.10)
+•	BEDTools (2.29.0)
+•	Trinity (2.13.0)
+•	STAR (2.7.0c)
+•	Infernal (1.1.2)
+```
 
 ### 2.2 Required raw data and database:
 ```•	Reference CDS isoforms from homologous species.```\
