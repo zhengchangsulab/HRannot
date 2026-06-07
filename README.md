@@ -114,26 +114,25 @@ splign -ldsdir fasta_dir -comps ./fasta_dir/rna.compartments -type est > splign.
 ```usage: HRannot.py -g  -c  -sh  -p  -sr  -ns  -nc  [-l] [-s]``` \
 \
 optional arguments: \
-```-h,  --help           show this help message and exit``` \
-```-g , --genome         Required``` \
+```-h  --help            show this help message and exit``` \
+```-g  --genome          Required``` \
 ```                      Target assembled genome``` \
-```-c , --CDS            Required``` \
+```-c  --CDS             Required``` \
 ```                      Homology CDS isoforms and their corresponding genes’ name``` \
-```-sh , --splignh       Required``` \
-```                      Splign output from homology CDS```\
-  -p , --prefix        Required
-                       Prefix of the corresponding Splign output
-  -sr , --splignR      Required
-                       Splign output from RNA-seq data
-  -ns , --nonsupport   Required
-                       Bed file of the genome region not supported by the high-quality sequencing reads
-  -nc , --noncoding    Required
-                       Non-coding RNAs in the genome
-  -l , --minORFlen     Default=300
-                       Minimum length of the open reading frames identified by RNA-seq data
-  -s , --minRNAsco     Default=0.985
-                       Minimum score of Splign output from RNA-seq data
-
+```-sh --splignh         Required``` \
+```                      Splign output from homology CDS``` \
+```-p  --prefix          Required``` \
+```                      Prefix of the corresponding Splign output``` \
+```-sr --splignR         Required``` \
+```                      Splign output from RNA-seq data``` \
+```-ns --nonsupport      Required``` \
+```                      Bed file of the genome region not supported by the high-quality sequencing reads``` \
+```-nc --noncoding       Required``` \
+```                      Non-coding RNAs in the genome``` \
+```-l  --minORFlen       Default=300``` \
+```                      Minimum length of the open reading frames identified by RNA-seq data``` \
+```-s  --minRNAsco       Default=0.985``` \
+```                      Minimum score of Splign output from RNA-seq data```\
 
 \
 An example to run HRannot: \
