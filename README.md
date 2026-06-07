@@ -136,7 +136,7 @@ optional arguments: \
 \
 An example to run HRannot: \
 HRannot.py -g genome.fa \\\
--m species1.splign.output.ref,species2.splign.output.ref \\\
+&emsp;&emsp;-m species1.splign.output.ref,species2.splign.output.ref \\\
 &emsp;&emsp;-c species1.reference_CDS.name,species2.reference_CDS.name \\\
 &emsp;&emsp;-p species1,species2 \\\
 &emsp;&emsp;-r splign.output.rna \\\
