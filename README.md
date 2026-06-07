@@ -8,10 +8,11 @@
 ## 1 Installation
 
 ```bash
-git clone https://github.com/zhengchangsulab/HRannot.git``` \
-```cd HRannot/bin``` \
-```chmod 711 *``` \
-```PATH=$PATH:$PWD```
+git clone https://github.com/zhengchangsulab/HRannot.git
+cd HRannot/bin
+chmod 711 *
+PATH=$PATH:$PWD
+```
 
 ## 2 Dependencies
 ### 2.1 Required tools:
