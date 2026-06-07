@@ -114,7 +114,7 @@ splign -ldsdir fasta_dir -comps ./fasta_dir/rna.compartments -type est > splign.
 &emsp;&emsp;usage: HRannot.py -g  -c  -sh  -p  -sr  -ns  -nc  [-l] [-s] \
 \
 optional arguments: \
-{-h, --help           show this help message and exit}
+```-h, --help           show this help message and exit```
 
 \
 An example to run HRannot: \
