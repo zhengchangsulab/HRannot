@@ -138,8 +138,8 @@ optional arguments: \
 ```  -o  --overlap     Default=0.95``` \
 ```                    Minimal overlap rate (a decimal) of a gene in the next nearest species to be considered.``` \
 ```  -i  --identity    Default=0.99``` \
-```                    Minimal identity (a decimal) of a gene in the next nearest species to be considered.``` \
-
+```                    Minimal identity (a decimal) of a gene in the next nearest species to be considered.```
+\
 ```chmod 711 HRannot.sh``` \
 ```./HRannot.sh```
 
