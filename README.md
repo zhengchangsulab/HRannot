@@ -111,7 +111,8 @@ splign -ldsdir fasta_dir -comps ./fasta_dir/rna.compartments -type est > splign.
 
 ### Step 6: Run the HRannot scripts. Users can define the parameters by themselves.
 ./HRannot.py -h \
-&emsp;&emsp;usage: HRannot.py -g  -c  -sh  -p  -sr  -ns  -nc  [-l] [-s] \\
+&emsp;&emsp;usage: HRannot.py -g  -c  -sh  -p  -sr  -ns  -nc  [-l] [-s] \
+\
 optional arguments: \
     -h   --help          show this help message and exit \
     -g   --genome        Required \
