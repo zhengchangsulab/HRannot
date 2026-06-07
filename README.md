@@ -15,7 +15,7 @@
 ## 2 Dependencies
 ### 2.1 Required tools:
 ```•	Splign (2.0.0)```\
-```•	Python (3.6.8)```\
+```•	Python (>=3.6.8)```\
 ```•	Bowtie2 (2.4.1)```\
 ```•	SAMtools (1.10)```\
 ```•	BEDTools (2.29.0)```\
