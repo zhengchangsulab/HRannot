@@ -25,7 +25,7 @@ fp=open(genome,'r')
 for i in fp:
     i=re.sub('\n','',i)
     if re.match('>',i):
-        name=i[1:]
+        name=i.split()[0][1:]
         if s!="":
             genome_h[name1]=s
             s=""
