@@ -6,7 +6,7 @@ fp=open(genome,'r')
 for i in fp:
     i=re.sub('\n','',i)
     if re.match('>',i):
-        name=i[1:]
+        name=i.split()[0][1:]
         s=0
     else:
         s+=len(i)
